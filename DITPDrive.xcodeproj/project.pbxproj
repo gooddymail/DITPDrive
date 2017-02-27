@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853D21E63D86E00162642 /* AppDelegate.swift */; };
 		81A853D51E63D86E00162642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853D41E63D86E00162642 /* ViewController.swift */; };
 		81A853D81E63D86E00162642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A853D61E63D86E00162642 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		81A853CF1E63D86E00162642 /* DITPDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITPDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A853D21E63D86E00162642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81A853D41E63D86E00162642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +59,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81788C4F1E63FD2C00120471 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81788C501E63FD2C00120471 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		81A853C61E63D86E00162642 = {
 			isa = PBXGroup;
 			children = (
 				81A853D11E63D86E00162642 /* DITPDrive */,
 				81A853E61E63D86E00162642 /* DITPDriveTests */,
 				81A853D01E63D86E00162642 /* Products */,
+				81788C4F1E63FD2C00120471 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +118,7 @@
 				81A853CB1E63D86E00162642 /* Sources */,
 				81A853CC1E63D86E00162642 /* Frameworks */,
 				81A853CD1E63D86E00162642 /* Resources */,
+				81788C521E63FD5300120471 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,6 +208,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81788C521E63FD5300120471 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81A853CB1E63D86E00162642 /* Sources */ = {
@@ -340,6 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5EMLTG87JU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DITPDrive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpoolpipat.DITPDrive;
@@ -353,6 +387,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5EMLTG87JU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DITPDrive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpoolpipat.DITPDrive;
@@ -410,6 +448,7 @@
 				81A853EE1E63D86E00162642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81A853EF1E63D86E00162642 /* Build configuration list for PBXNativeTarget "DITPDriveTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +457,7 @@
 				81A853F11E63D86E00162642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
