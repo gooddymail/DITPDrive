@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
+		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
 		81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853D21E63D86E00162642 /* AppDelegate.swift */; };
 		81A853D51E63D86E00162642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853D41E63D86E00162642 /* ViewController.swift */; };
 		81A853D81E63D86E00162642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A853D61E63D86E00162642 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		81788C541E6407FB00120471 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		81A853CF1E63D86E00162642 /* DITPDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITPDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A853D21E63D86E00162642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81A853D41E63D86E00162642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		81788C531E64062800120471 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81788C541E6407FB00120471 /* Activity.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		81A853C61E63D86E00162642 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		81A853D11E63D86E00162642 /* DITPDrive */ = {
 			isa = PBXGroup;
 			children = (
+				81788C531E64062800120471 /* Models */,
 				81A853D21E63D86E00162642 /* AppDelegate.swift */,
 				81A853D41E63D86E00162642 /* ViewController.swift */,
 				81A853D61E63D86E00162642 /* Main.storyboard */,
@@ -231,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81788C551E6407FB00120471 /* Activity.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 			);
