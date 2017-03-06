@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		811D37741E652900006195BB /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 811D37731E652900006195BB /* activity.json */; };
 		811D37771E652ED3006195BB /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D37761E652ED3006195BB /* SerializationError.swift */; };
+		813656541E6D3A6600C478CD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656531E6D3A6600C478CD /* Router.swift */; };
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
 		81788C891E641B2200120471 /* ActivityModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C881E641B2200120471 /* ActivityModelTest.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		811D37731E652900006195BB /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
 		811D37761E652ED3006195BB /* SerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
+		813656531E6D3A6600C478CD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		81788C541E6407FB00120471 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		81788C881E641B2200120471 /* ActivityModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModelTest.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
+		813656521E6D39F000C478CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				813656531E6D3A6600C478CD /* Router.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		81788C4F1E63FD2C00120471 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		81A853D11E63D86E00162642 /* DITPDrive */ = {
 			isa = PBXGroup;
 			children = (
+				813656521E6D39F000C478CD /* Network */,
 				811D37751E652EB3006195BB /* Service */,
 				81788C531E64062800120471 /* Models */,
 				81A853D21E63D86E00162642 /* AppDelegate.swift */,
@@ -270,6 +281,7 @@
 			files = (
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
+				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
 			);
