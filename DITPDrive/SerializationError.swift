@@ -10,5 +10,4 @@ import Foundation
 
 enum SerializarionError: Error {
   case missing(String)
-  
 }

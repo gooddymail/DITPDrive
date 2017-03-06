@@ -35,7 +35,7 @@ class ActivityModelTests: XCTestCase {
   }
   
   func testInitailizeActivityShouldThrowErrorWhenImportantInformationIsMissing() {
-    XCTAssertThrowsError(try Activity(json: [:]), "Should throw error when important") { error in
+    XCTAssertThrowsError(try Activity(json: [:]), "Should throw error when important data is missing") { error in
       guard case SerializarionError.missing(let value) = error else {
         return XCTFail()
       }
