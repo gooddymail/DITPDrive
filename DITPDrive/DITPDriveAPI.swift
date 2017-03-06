@@ -11,7 +11,7 @@ import Alamofire
 
 final class DITPDriveAPI {
   
-  static let insrance: DITPDriveAPI = DITPDriveAPI()
+  static let instance: DITPDriveAPI = DITPDriveAPI()
   
   fileprivate init() {}
   

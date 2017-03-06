@@ -15,7 +15,7 @@ enum Router: URLRequestConvertible {
   case activity(page: Int?)
   
   // MARK: - BaseURL
-  static let baseURL: URL = URL(string: "")!
+  static let baseURL: URL = URL(string: "https://ditpdrive.com")!
   
   var path: String {
     switch self {
