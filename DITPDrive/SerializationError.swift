@@ -10,5 +10,8 @@ import Foundation
 
 enum SerializarionError: Error {
   case missing(String)
-  
+}
+
+enum DITPDriveError: Error {
+  case objectSerialization(reason: String)
 }

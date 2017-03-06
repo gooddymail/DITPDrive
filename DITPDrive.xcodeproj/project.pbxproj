@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		811D37741E652900006195BB /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 811D37731E652900006195BB /* activity.json */; };
 		811D37771E652ED3006195BB /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D37761E652ED3006195BB /* SerializationError.swift */; };
+		813656541E6D3A6600C478CD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656531E6D3A6600C478CD /* Router.swift */; };
+		813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656551E6D4A8300C478CD /* DITPDriveAPI.swift */; };
+		813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656581E6D4F9500C478CD /* ActivitiesWrapper.swift */; };
+		8136565C1E6D729900C478CD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
+		8136565D1E6D729C00C478CD /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; };
+		8136565F1E6D72BD00C478CD /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		813656611E6D74C100C478CD /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 813656601E6D74C100C478CD /* activities.json */; };
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
 		81788C891E641B2200120471 /* ActivityModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C881E641B2200120471 /* ActivityModelTest.swift */; };
@@ -30,9 +37,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8136565E1E6D72AE00C478CD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8136565F1E6D72BD00C478CD /* OHHTTPStubs.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		811D37731E652900006195BB /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
 		811D37761E652ED3006195BB /* SerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
+		813656531E6D3A6600C478CD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		813656551E6D4A8300C478CD /* DITPDriveAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DITPDriveAPI.swift; sourceTree = "<group>"; };
+		813656581E6D4F9500C478CD /* ActivitiesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesWrapper.swift; sourceTree = "<group>"; };
+		8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		813656601E6D74C100C478CD /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
 		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		81788C541E6407FB00120471 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		81788C881E641B2200120471 /* ActivityModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModelTest.swift; sourceTree = "<group>"; };
@@ -61,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8136565C1E6D729900C478CD /* Alamofire.framework in Frameworks */,
+				8136565D1E6D729C00C478CD /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				811D37731E652900006195BB /* activity.json */,
+				813656601E6D74C100C478CD /* activities.json */,
 			);
 			name = TestsResource;
 			sourceTree = "<group>";
@@ -83,9 +111,28 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
+		813656521E6D39F000C478CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				813656531E6D3A6600C478CD /* Router.swift */,
+				813656551E6D4A8300C478CD /* DITPDriveAPI.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		813656571E6D4F8000C478CD /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				81788C541E6407FB00120471 /* Activity.swift */,
+				813656581E6D4F9500C478CD /* ActivitiesWrapper.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
 		81788C4F1E63FD2C00120471 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */,
 				81788C501E63FD2C00120471 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -94,7 +141,7 @@
 		81788C531E64062800120471 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				81788C541E6407FB00120471 /* Activity.swift */,
+				813656571E6D4F8000C478CD /* Activities */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -121,6 +168,7 @@
 		81A853D11E63D86E00162642 /* DITPDrive */ = {
 			isa = PBXGroup;
 			children = (
+				813656521E6D39F000C478CD /* Network */,
 				811D37751E652EB3006195BB /* Service */,
 				81788C531E64062800120471 /* Models */,
 				81A853D21E63D86E00162642 /* AppDelegate.swift */,
@@ -172,6 +220,7 @@
 				81A853DF1E63D86E00162642 /* Sources */,
 				81A853E01E63D86E00162642 /* Frameworks */,
 				81A853E11E63D86E00162642 /* Resources */,
+				8136565E1E6D72AE00C478CD /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -240,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813656611E6D74C100C478CD /* activities.json in Resources */,
 				811D37741E652900006195BB /* activity.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +304,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
 			);
 			outputPaths = (
 			);
@@ -270,8 +321,11 @@
 			files = (
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
+				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
+				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
+				813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +499,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2S2U2UJK3M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DITPDriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpoolpipat.DITPDriveTests;
@@ -460,6 +518,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2S2U2UJK3M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DITPDriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpoolpipat.DITPDriveTests;

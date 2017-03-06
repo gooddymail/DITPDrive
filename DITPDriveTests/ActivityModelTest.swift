@@ -7,17 +7,23 @@
 //
 
 import XCTest
+import Alamofire
+import OHHTTPStubs
 @testable import DITPDrive
 
 class ActivityModelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+      stub(condition: isHost("ditpdrive.com") && isPath("activities")) { request in
+        return OHHTTPStubsResponse(fileAtPath: OHPathForFile("activities.json", type(of: self))!,
+                                   statusCode: 200,
+                                   headers: nil)
+      }
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        OHHTTPStubs.removeAllStubs()
         super.tearDown()
     }
   
@@ -35,11 +41,19 @@ class ActivityModelTests: XCTestCase {
   }
   
   func testInitailizeActivityShouldThrowErrorWhenImportantInformationIsMissing() {
-    XCTAssertThrowsError(try Activity(json: [:]), "Should throw error when important") { error in
+    XCTAssertThrowsError(try Activity(json: [:]), "Should throw error when important data is missing") { error in
       guard case SerializarionError.missing(let value) = error else {
         return XCTFail()
       }
       XCTAssertEqual(value, "important Information")
+    }
+  }
+  
+  func testGetActivitiesFromServer() {
+    var activitiesWrapper: ActivitiesWrapper?
+    DITPDriveAPI.instance.getActivities(nil) { result in
+      activitiesWrapper = result.value
+      XCTAssertEqual(activitiesWrapper?.count, 3)
     }
   }
     
