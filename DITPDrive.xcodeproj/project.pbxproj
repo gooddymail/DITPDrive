@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8118021D1E7107060092EC31 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8118021C1E7107060092EC31 /* Home.storyboard */; };
+		8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118021E1E71071E0092EC31 /* HomeViewController.swift */; };
 		811D37741E652900006195BB /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 811D37731E652900006195BB /* activity.json */; };
 		811D37771E652ED3006195BB /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D37761E652ED3006195BB /* SerializationError.swift */; };
 		813656541E6D3A6600C478CD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656531E6D3A6600C478CD /* Router.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8118021C1E7107060092EC31 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8118021E1E71071E0092EC31 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		811D37731E652900006195BB /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
 		811D37761E652ED3006195BB /* SerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
 		813656531E6D3A6600C478CD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -97,8 +101,18 @@
 		8118021A1E7106870092EC31 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8118021B1E7106F50092EC31 /* Home */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8118021B1E7106F50092EC31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8118021C1E7107060092EC31 /* Home.storyboard */,
+				8118021E1E71071E0092EC31 /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		811D37721E6528BB006195BB /* TestsResource */ = {
@@ -290,6 +304,7 @@
 				81A853DD1E63D86E00162642 /* LaunchScreen.storyboard in Resources */,
 				81A853DA1E63D86E00162642 /* Assets.xcassets in Resources */,
 				81A853D81E63D86E00162642 /* Main.storyboard in Resources */,
+				8118021D1E7107060092EC31 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +345,7 @@
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
+				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
