@@ -156,7 +156,7 @@
         <!--Intro Page View Controller-->
         <scene sceneID="0ab-hH-Dae">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="l1t-0R-Dwg" customClass="IntroPageViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="l1t-0R-Dwg" customClass="IntroPageViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5y-bj-UT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1022" y="-359"/>

@@ -22,6 +22,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sC4-0U-vEN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAJ-Yg-Njc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <color key="backgroundColor" red="0.00040386916953139007" green="0.015336311422288418" blue="0.14837175607681274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,13 +34,13 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="269" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-HL-ugs">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="Wlt-Qb-cXi">
                                         <rect key="frame" x="0.0" y="28" width="375" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wlt-Qb-cXi" id="66W-Nx-7aE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="268.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-v1-oBe">
@@ -98,10 +101,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jAJ-Yg-Njc" firstAttribute="leading" secondItem="DId-ke-qDr" secondAttribute="leading" id="1bl-AP-iwt"/>
+                            <constraint firstItem="HW7-j9-SDN" firstAttribute="top" secondItem="sC4-0U-vEN" secondAttribute="bottom" id="4KM-Bi-fyb"/>
                             <constraint firstItem="HW7-j9-SDN" firstAttribute="top" secondItem="Ood-HL-ugs" secondAttribute="bottom" id="Xu8-QE-5KN"/>
+                            <constraint firstItem="sC4-0U-vEN" firstAttribute="leading" secondItem="DId-ke-qDr" secondAttribute="leading" id="bV6-Ca-eqq"/>
+                            <constraint firstAttribute="trailing" secondItem="sC4-0U-vEN" secondAttribute="trailing" id="dgU-KE-ENZ"/>
                             <constraint firstItem="Ood-HL-ugs" firstAttribute="leading" secondItem="DId-ke-qDr" secondAttribute="leading" id="f2s-Eb-tcd"/>
                             <constraint firstAttribute="trailing" secondItem="Ood-HL-ugs" secondAttribute="trailing" id="np4-lz-xvD"/>
                             <constraint firstItem="Ood-HL-ugs" firstAttribute="top" secondItem="jAJ-Yg-Njc" secondAttribute="bottom" id="q4L-F7-VlS"/>
+                            <constraint firstItem="sC4-0U-vEN" firstAttribute="top" secondItem="DId-ke-qDr" secondAttribute="top" id="ucx-if-lTi"/>
                             <constraint firstItem="jAJ-Yg-Njc" firstAttribute="top" secondItem="DId-ke-qDr" secondAttribute="top" id="wUy-dD-RpO"/>
                             <constraint firstAttribute="trailing" secondItem="jAJ-Yg-Njc" secondAttribute="trailing" id="z53-Et-S16"/>
                         </constraints>
@@ -110,7 +117,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRy-BM-Kle" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="-280"/>
+            <point key="canvasLocation" x="-90.400000000000006" y="-325.18740629685158"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+    </resources>
 </document>

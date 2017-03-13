@@ -48,7 +48,7 @@ extension IntroPageViewController: UIPageViewControllerDataSource {
   
   func presentationIndex(for pageViewController: UIPageViewController) -> Int {
     guard let firstViewController = viewControllers?.first,
-     let firstViewControllerIndex = introStepViewControllers.index(of: firstViewController) else {
+          let firstViewControllerIndex = introStepViewControllers.index(of: firstViewController) else {
       return 0
     }
     
