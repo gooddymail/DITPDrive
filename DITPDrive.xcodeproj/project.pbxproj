@@ -27,6 +27,7 @@
 		81A853DA1E63D86E00162642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A853D91E63D86E00162642 /* Assets.xcassets */; };
 		81A853DD1E63D86E00162642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A853DB1E63D86E00162642 /* LaunchScreen.storyboard */; };
 		81A853E81E63D86E00162642 /* DITPDriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853E71E63D86E00162642 /* DITPDriveTests.swift */; };
+		81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		81A853E31E63D86E00162642 /* DITPDriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DITPDriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A853E71E63D86E00162642 /* DITPDriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITPDriveTests.swift; sourceTree = "<group>"; };
 		81A853E91E63D86E00162642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		8118021A1E7106870092EC31 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81F2233E1E768527008D4F41 /* Intro */,
 				8118021B1E7106F50092EC31 /* Home */,
 			);
 			name = Controllers;
@@ -212,6 +215,14 @@
 				81A853E91E63D86E00162642 /* Info.plist */,
 			);
 			path = DITPDriveTests;
+			sourceTree = "<group>";
+		};
+		81F2233E1E768527008D4F41 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */,
+			);
+			name = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
+				81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
 				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,
