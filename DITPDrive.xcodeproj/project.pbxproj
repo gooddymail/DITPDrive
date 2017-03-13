@@ -28,6 +28,7 @@
 		81A853DD1E63D86E00162642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A853DB1E63D86E00162642 /* LaunchScreen.storyboard */; };
 		81A853E81E63D86E00162642 /* DITPDriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853E71E63D86E00162642 /* DITPDriveTests.swift */; };
 		81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */; };
+		81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		81A853E71E63D86E00162642 /* DITPDriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITPDriveTests.swift; sourceTree = "<group>"; };
 		81A853E91E63D86E00162642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
+		81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		81A853D11E63D86E00162642 /* DITPDrive */ = {
 			isa = PBXGroup;
 			children = (
+				81F223411E76875A008D4F41 /* Tools */,
 				8118021A1E7106870092EC31 /* Controllers */,
 				813656521E6D39F000C478CD /* Network */,
 				811D37751E652EB3006195BB /* Service */,
@@ -223,6 +226,14 @@
 				81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */,
 			);
 			name = Intro;
+			sourceTree = "<group>";
+		};
+		81F223411E76875A008D4F41 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +369,7 @@
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
 				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,
+				81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */,
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
