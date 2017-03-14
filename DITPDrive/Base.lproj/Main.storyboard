@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="385" y="-652"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro Container View Controller-->
         <scene sceneID="Qx5-5q-dbG">
             <objects>
-                <viewController id="s8Q-GL-pO5" sceneMemberID="viewController">
+                <viewController id="s8Q-GL-pO5" customClass="IntroContainerViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q2S-GI-95z"/>
                         <viewControllerLayoutGuide type="bottom" id="0Qi-kR-QnF"/>
@@ -123,7 +123,7 @@
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-CZ-DvB">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.00040386916953139007" green="0.015336311422288418" blue="0.14837175607681274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.015686274509803921" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BG6-UX-5vB"/>
                                 </constraints>
@@ -131,6 +131,9 @@
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipTapped:" destination="s8Q-GL-pO5" eventType="touchUpInside" id="obJ-Dg-qKy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

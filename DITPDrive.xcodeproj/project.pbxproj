@@ -29,6 +29,7 @@
 		81A853E81E63D86E00162642 /* DITPDriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853E71E63D86E00162642 /* DITPDriveTests.swift */; };
 		81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */; };
 		81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */; };
+		81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		81A853E91E63D86E00162642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStoryboard.swift; sourceTree = "<group>"; };
+		81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 		81F2233E1E768527008D4F41 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */,
 				81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */,
 			);
 			name = Intro;
@@ -372,6 +375,7 @@
 				81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */,
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
+				81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
 				813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */,
 			);

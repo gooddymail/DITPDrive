@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="uA2-PU-NFa">
             <objects>
-                <viewController id="Epx-NL-7cc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="Epx-NL-7cc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CuB-aX-0x3"/>
                         <viewControllerLayoutGuide type="bottom" id="HW7-j9-SDN"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sC4-0U-vEN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAJ-Yg-Njc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
@@ -33,14 +33,21 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="269" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-HL-ugs">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="mcz-Zo-DoO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <connections>
+                                        <segue destination="MuF-SS-HKV" kind="embed" id="jQl-Md-jI9"/>
+                                    </connections>
+                                </containerView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="Wlt-Qb-cXi">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="269"/>
+                                        <rect key="frame" x="0.0" y="209" width="375" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wlt-Qb-cXi" id="66W-Nx-7aE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="268.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-v1-oBe">
@@ -113,14 +120,26 @@
                             <constraint firstAttribute="trailing" secondItem="jAJ-Yg-Njc" secondAttribute="trailing" id="z53-Et-S16"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="icon-home" selectedImage="icon-home-active" id="qgZ-yd-Nmd"/>
                     <navigationItem key="navigationItem" id="Vwo-M2-jFH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRy-BM-Kle" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90.400000000000006" y="-325.18740629685158"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Efl-yZ-14M">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="MuF-SS-HKV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVC-rF-hbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="170"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
+        <image name="icon-home" width="22" height="22"/>
+        <image name="icon-home-active" width="22" height="22"/>
     </resources>
 </document>
