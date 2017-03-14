@@ -30,6 +30,7 @@
 		81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */; };
 		81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */; };
 		81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */; };
+		81FD34A41E77B029005D1404 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34A31E77B029005D1404 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStoryboard.swift; sourceTree = "<group>"; };
 		81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroContainerViewController.swift; sourceTree = "<group>"; };
+		81FD34A31E77B029005D1404 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		81A853D11E63D86E00162642 /* DITPDrive */ = {
 			isa = PBXGroup;
 			children = (
+				81FD34A21E77B00F005D1404 /* Resources */,
 				81F223411E76875A008D4F41 /* Tools */,
 				8118021A1E7106870092EC31 /* Controllers */,
 				813656521E6D39F000C478CD /* Network */,
@@ -204,7 +207,6 @@
 				81A853D21E63D86E00162642 /* AppDelegate.swift */,
 				81A853D41E63D86E00162642 /* ViewController.swift */,
 				81A853D61E63D86E00162642 /* Main.storyboard */,
-				81A853D91E63D86E00162642 /* Assets.xcassets */,
 				81A853DB1E63D86E00162642 /* LaunchScreen.storyboard */,
 				81A853DE1E63D86E00162642 /* Info.plist */,
 			);
@@ -237,6 +239,15 @@
 				81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		81FD34A21E77B00F005D1404 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81A853D91E63D86E00162642 /* Assets.xcassets */,
+				81FD34A31E77B029005D1404 /* Theme.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +387,7 @@
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */,
+				81FD34A41E77B029005D1404 /* Theme.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
 				813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */,
 			);
