@@ -31,6 +31,8 @@
 		81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */; };
 		81FD34A41E77B029005D1404 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34A31E77B029005D1404 /* Theme.swift */; };
 		81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */; };
+		81FD34A91E77E35C005D1404 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; };
+		81FD34AB1E77E35E005D1404 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FD34AA1E77E35E005D1404 /* SDWebImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,7 @@
 		81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroContainerViewController.swift; sourceTree = "<group>"; };
 		81FD34A31E77B029005D1404 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationPageViewController.swift; sourceTree = "<group>"; };
+		81FD34AA1E77E35E005D1404 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */,
+				81FD34A91E77E35C005D1404 /* OHHTTPStubs.framework in Frameworks */,
+				81FD34AB1E77E35E005D1404 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +169,7 @@
 		81788C4F1E63FD2C00120471 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81FD34AA1E77E35E005D1404 /* SDWebImage.framework */,
 				8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */,
 				81788C501E63FD2C00120471 /* Alamofire.framework */,
 			);
@@ -380,6 +386,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 			);
 			outputPaths = (
 			);
