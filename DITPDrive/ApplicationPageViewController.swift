@@ -24,6 +24,14 @@ class ApplicationPageViewController: UIPageViewController {
     setupPageControlContent()
   }
   
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    if let pageScrollView = view.subviews.first {
+      pageScrollView.frame = view.bounds
+    }
+  }
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     

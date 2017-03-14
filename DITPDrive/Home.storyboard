@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="uA2-PU-NFa">
             <objects>
-                <viewController storyboardIdentifier="home" id="Epx-NL-7cc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="Epx-NL-7cc" customClass="HomeViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CuB-aX-0x3"/>
                         <viewControllerLayoutGuide type="bottom" id="HW7-j9-SDN"/>
@@ -36,18 +36,16 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="mcz-Zo-DoO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <connections>
-                                        <segue destination="MuF-SS-HKV" kind="embed" id="jQl-Md-jI9"/>
-                                    </connections>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </containerView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="Wlt-Qb-cXi">
-                                        <rect key="frame" x="0.0" y="209" width="375" height="269"/>
+                                        <rect key="frame" x="0.0" y="188" width="375" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wlt-Qb-cXi" id="66W-Nx-7aE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="268.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-v1-oBe">
@@ -123,18 +121,48 @@
                     <tabBarItem key="tabBarItem" title="Home" image="icon-home" selectedImage="icon-home-active" id="qgZ-yd-Nmd"/>
                     <navigationItem key="navigationItem" id="Vwo-M2-jFH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="hightlightActivityContainerView" destination="mcz-Zo-DoO" id="znj-id-DxY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRy-BM-Kle" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90.400000000000006" y="-325.18740629685158"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="Efl-yZ-14M">
+        <!--Highlight Activity View Controller-->
+        <scene sceneID="NNt-l2-cN3">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="MuF-SS-HKV" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iVC-rF-hbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="HighlightActivity" id="O8Q-Ax-uWR" customClass="HighlightActivityViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8qW-C6-37F"/>
+                        <viewControllerLayoutGuide type="bottom" id="zi5-CS-epX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7BB-TU-A5T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n9x-mH-CGt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="n9x-mH-CGt" secondAttribute="trailing" id="NFE-8h-r6S"/>
+                            <constraint firstItem="n9x-mH-CGt" firstAttribute="leading" secondItem="7BB-TU-A5T" secondAttribute="leading" id="O5R-oR-G4K"/>
+                            <constraint firstItem="zi5-CS-epX" firstAttribute="top" secondItem="n9x-mH-CGt" secondAttribute="bottom" id="UlH-ic-38n"/>
+                            <constraint firstItem="n9x-mH-CGt" firstAttribute="top" secondItem="8qW-C6-37F" secondAttribute="bottom" id="pq7-M0-BGL"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="160"/>
+                    <connections>
+                        <outlet property="highlightImageView" destination="n9x-mH-CGt" id="1GW-yC-MNB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yd-6J-Vo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90" y="170"/>
+            <point key="canvasLocation" x="637.60000000000002" y="-272.56371814092955"/>
         </scene>
     </scenes>
     <resources>
