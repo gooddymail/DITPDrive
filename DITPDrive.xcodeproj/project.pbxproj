@@ -27,10 +27,10 @@
 		81A853DA1E63D86E00162642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A853D91E63D86E00162642 /* Assets.xcassets */; };
 		81A853DD1E63D86E00162642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A853DB1E63D86E00162642 /* LaunchScreen.storyboard */; };
 		81A853E81E63D86E00162642 /* DITPDriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853E71E63D86E00162642 /* DITPDriveTests.swift */; };
-		81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */; };
 		81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */; };
 		81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */; };
 		81FD34A41E77B029005D1404 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34A31E77B029005D1404 /* Theme.swift */; };
+		81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +79,10 @@
 		81A853E31E63D86E00162642 /* DITPDriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DITPDriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A853E71E63D86E00162642 /* DITPDriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITPDriveTests.swift; sourceTree = "<group>"; };
 		81A853E91E63D86E00162642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStoryboard.swift; sourceTree = "<group>"; };
 		81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroContainerViewController.swift; sourceTree = "<group>"; };
 		81FD34A31E77B029005D1404 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,8 @@
 		8118021A1E7106870092EC31 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81FD34A61E77D1E7005D1404 /* ApplicationPageController */,
+				81FD34A51E77D184005D1404 /* HighlightActivity */,
 				81F2233E1E768527008D4F41 /* Intro */,
 				8118021B1E7106F50092EC31 /* Home */,
 			);
@@ -228,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				81F223441E76A93F008D4F41 /* IntroContainerViewController.swift */,
-				81F2233F1E7685DA008D4F41 /* IntroPageViewController.swift */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -248,6 +249,21 @@
 				81FD34A31E77B029005D1404 /* Theme.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		81FD34A51E77D184005D1404 /* HighlightActivity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HighlightActivity;
+			sourceTree = "<group>";
+		};
+		81FD34A61E77D1E7005D1404 /* ApplicationPageController */ = {
+			isa = PBXGroup;
+			children = (
+				81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */,
+			);
+			name = ApplicationPageController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
-				81F223401E7685DA008D4F41 /* IntroPageViewController.swift in Sources */,
+				81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
 				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,

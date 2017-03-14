@@ -10,16 +10,35 @@ import UIKit
 
 class IntroContainerViewController: UIViewController {
   
+  @IBOutlet weak var introStepContainerView: UIView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
+    setupIntroPageView()
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
+  
+  fileprivate func setupIntroPageView() {
+    
+    let introStepPageViewController = ApplicationPageViewController(contentViewControllersInPageView: [self.introStepViewController(withIdentifier: "step1"),
+                                                                                                       self.introStepViewController(withIdentifier: "step2"),
+                                                                                                       self.introStepViewController(withIdentifier: "step3")])
+    addChildViewController(introStepPageViewController)
+    introStepPageViewController.view.frame = introStepContainerView.frame
+    introStepContainerView.addSubview(introStepPageViewController.view)
+    introStepPageViewController.didMove(toParentViewController: self)
+  }
+  
+  fileprivate func introStepViewController(withIdentifier identifier: String) -> UIViewController {
+    
+    return UIStoryboard.mainStoryboard().instantiateViewController(withIdentifier: identifier)
+  }
+  
+  // MARK: - Action
   
   @IBAction func skipTapped(_ sender: Any) {
     
@@ -31,7 +50,8 @@ class IntroContainerViewController: UIViewController {
     UIView.transition(with: window! , duration: 0.3, options: .transitionCrossDissolve, animations: {
       let tabbarController = UITabBarController()
       tabbarController.tabBar.tintColor = UIColor(red:0.98, green:0.69, blue:0.25, alpha:1.0)
-      tabbarController.tabBar.barTintColor = UIColor(red:0.00, green:0.02, blue:0.15, alpha:1.0)
+      tabbarController.tabBar.barTintColor = UIColor(applicationColor: .purple)
+      tabbarController.tabBar.isTranslucent = false
       tabbarController.viewControllers = [UIStoryboard.homeStoryboard().instantiateViewController(withIdentifier: "home")]
       window!.rootViewController = tabbarController
     }, completion: nil)

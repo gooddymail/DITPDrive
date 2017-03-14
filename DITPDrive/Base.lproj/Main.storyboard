@@ -117,13 +117,10 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcf-mH-mq4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="l1t-0R-Dwg" kind="embed" id="pRs-Jv-cfJ"/>
-                                </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-CZ-DvB">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.015686274509803921" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.14368140697479248" green="0.15781623125076294" blue="0.26844385266304016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BG6-UX-5vB"/>
                                 </constraints>
@@ -151,18 +148,13 @@
                             <constraint firstItem="0Qi-kR-QnF" firstAttribute="top" secondItem="vyt-CZ-DvB" secondAttribute="bottom" id="xb5-5F-ed3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="introStepContainerView" destination="Fcf-mH-mq4" id="Dsj-gW-cWf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEQ-DG-Oh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1702" y="-359"/>
-        </scene>
-        <!--Intro Page View Controller-->
-        <scene sceneID="0ab-hH-Dae">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="l1t-0R-Dwg" customClass="IntroPageViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M5y-bj-UT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1022" y="-359"/>
         </scene>
     </scenes>
     <resources>
