@@ -27,17 +27,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-welcome" translatesAutoresizingMaskIntoConstraints="NO" id="re7-s0-Xhe">
-                                <rect key="frame" x="63.5" y="190" width="247" height="105"/>
+                                <rect key="frame" x="64" y="190" width="247" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="247" id="Cob-HR-jLi"/>
                                     <constraint firstAttribute="height" constant="105" id="hdg-EK-gI2"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To DITP DRIVE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPu-Yu-dfB">
+                                <rect key="frame" x="70" y="450" width="234" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="re7-s0-Xhe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="3Pa-H1-t6m"/>
                             <constraint firstItem="re7-s0-Xhe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5LA-FD-UKL"/>
+                            <constraint firstItem="PPu-Yu-dfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5VF-JW-zoP"/>
+                            <constraint firstItem="PPu-Yu-dfB" firstAttribute="top" secondItem="re7-s0-Xhe" secondAttribute="bottom" constant="155" id="qAm-Ld-YjX"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlJ-C3-VWf">
-                                <rect key="frame" x="175.5" y="312" width="23.5" height="43"/>
+                                <rect key="frame" x="175" y="312" width="24" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -88,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOV-8X-Fft">
-                                <rect key="frame" x="176" y="312" width="22.5" height="43"/>
+                                <rect key="frame" x="176" y="312" width="23" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
