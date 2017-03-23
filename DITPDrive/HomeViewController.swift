@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    setupHighlightActivityPageView()
+//    setupHighlightActivityPageView()
   }
   
   override func didReceiveMemoryWarning() {
