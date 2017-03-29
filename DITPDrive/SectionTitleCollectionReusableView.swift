@@ -9,5 +9,10 @@
 import UIKit
 
 class SectionTitleCollectionReusableView: UICollectionReusableView {
+  @IBOutlet weak var titleLabel: UILabel!
+  
+  class func identifier() -> String {
+    return "sectiontitleHeader"
+  }
         
 }
