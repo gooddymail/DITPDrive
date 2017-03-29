@@ -12,12 +12,15 @@ class HomeViewController: UIViewController {
   
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var hightlightActivityContainerView: UIView!
+  @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
   @IBOutlet weak var headerViewTopConstraint: NSLayoutConstraint!
+  
+  fileprivate let kCollectionHeaderHeight: CGFloat = 160
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//    updateHeaderView()
+    setupCollectionViewContentOffset()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -47,11 +50,16 @@ class HomeViewController: UIViewController {
   }
   
   fileprivate func updateHeaderView() {
-    var headerReact = CGRect(x: 0, y: 0, width: hightlightActivityContainerView.frame.size.width, height: 160)
+    var headerReact = CGRect(x: 0, y: 0, width: hightlightActivityContainerView.frame.size.width, height: kCollectionHeaderHeight)
     headerReact.origin.y = -collectionView.contentOffset.y
     headerReact.size.height = -collectionView.contentOffset.y
-    print(headerReact.origin.y)
-    headerViewTopConstraint.constant = headerReact.origin.y
+    headerViewHeightConstraint.constant = headerReact.size.height
+  }
+  
+  fileprivate func setupCollectionViewContentOffset() {
+    collectionView.contentInset = UIEdgeInsets(top: kCollectionHeaderHeight, left: 0, bottom: 0, right: 0)
+    collectionView.contentOffset = CGPoint(x: 0, y: -kCollectionHeaderHeight)
+    updateHeaderView()
   }
   
   /*
