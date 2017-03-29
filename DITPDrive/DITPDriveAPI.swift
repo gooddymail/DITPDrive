@@ -19,7 +19,7 @@ final class DITPDriveAPI {
     self.activities(atPage: wrapper?.page, completionHandler: completionHandler)
   }
   
-  fileprivate func activities(atPage page: Int? = 1, completionHandler: @escaping (Result<ActivitiesWrapper>) -> Void) {
+  fileprivate func activities(atPage page: Int?, completionHandler: @escaping (Result<ActivitiesWrapper>) -> Void) {
     Alamofire.request(Router.activity(page: page)).responseJSON { [weak self] response in
       if let error = response.result.error {
         completionHandler(.failure(error))

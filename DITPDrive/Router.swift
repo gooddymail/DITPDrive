@@ -29,9 +29,9 @@ enum Router: URLRequestConvertible {
     }
   }
   
-  var parameters: [String: Any?] {
+  var parameters: [String: Any] {
     switch self {
-    case .activity(let page): return ["page": page]
+    case .activity(let page): return ["page": page ?? 1]
     }
   }
   
