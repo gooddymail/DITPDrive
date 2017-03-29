@@ -82,7 +82,7 @@ extension ApplicationPageViewController: UIPageViewControllerDataSource {
     let previousIndex = viewControllerIndex - 1
     
     guard previousIndex >= 0  else {
-      return nil
+      return contentViewControllers.last
     }
     
     guard contentViewControllers.count > previousIndex else {
@@ -102,7 +102,7 @@ extension ApplicationPageViewController: UIPageViewControllerDataSource {
     let nextIndex = viewControllerIndex + 1
     
     guard contentViewControllers.count != nextIndex else {
-      return nil
+      return contentViewControllers.first
     }
     
     guard contentViewControllers.count > nextIndex else {

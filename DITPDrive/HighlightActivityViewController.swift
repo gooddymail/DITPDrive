@@ -18,7 +18,7 @@ class HighlightActivityViewController: UIViewController {
     
     highlightImageView.sd_setShowActivityIndicatorView(true)
     highlightImageView.sd_setIndicatorStyle(.gray)
-    highlightImageView.sd_setImage(with: URL(string: "http://lorempixel.com/375/160/cats/"), placeholderImage: nil)
+    highlightImageView.sd_setImage(with: URL(string: "http://lorempixel.com/375/274/cats/"), placeholderImage: nil)
   }
   
   override func didReceiveMemoryWarning() {

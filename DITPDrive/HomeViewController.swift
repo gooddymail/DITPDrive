@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
   @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
   @IBOutlet weak var headerViewTopConstraint: NSLayoutConstraint!
   
-  fileprivate let kCollectionHeaderHeight: CGFloat = 160
+  fileprivate let kCollectionHeaderHeight: CGFloat = 338.0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -26,27 +26,11 @@ class HomeViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    setupHighlightActivityPageView()
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     
-  }
-  
-  fileprivate func setupHighlightActivityPageView() {
-    let highlightActivityPageViewController = ApplicationPageViewController(contentViewControllersInPageView: [highlightActivityViewController(),
-                                                                                                               highlightActivityViewController(),
-                                                                                                               highlightActivityViewController()])
-    
-    addChildViewController(highlightActivityPageViewController)
-    highlightActivityPageViewController.view.frame = CGRect(x: 0, y: 0, width: hightlightActivityContainerView.frame.size.width, height: hightlightActivityContainerView.frame.size.height)
-    hightlightActivityContainerView.addSubview(highlightActivityPageViewController.view)
-    highlightActivityPageViewController.didMove(toParentViewController: self)
-  }
-  
-  fileprivate func highlightActivityViewController() -> UIViewController {
-    return storyboard!.instantiateViewController(withIdentifier: "HighlightActivity")
   }
   
   fileprivate func updateHeaderView() {

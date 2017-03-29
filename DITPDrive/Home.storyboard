@@ -68,7 +68,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9-10 กันยายน 60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htv-0r-aCG">
-                                                    <rect key="frame" x="31" y="227" width="112" height="20"/>
+                                                    <rect key="frame" x="31" y="226.5" width="112" height="20"/>
                                                     <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="13"/>
                                                     <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diamond Island Exhibition Cambodia" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-FL-MK6">
-                                                    <rect key="frame" x="31" y="257" width="135" height="39.5"/>
+                                                    <rect key="frame" x="31" y="256.5" width="135" height="39.5"/>
                                                     <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="13"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -150,10 +150,14 @@
                                 </connections>
                             </collectionView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvh-sv-6gy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="338"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="0hy-kS-O6N"/>
+                                    <constraint firstAttribute="height" constant="338" id="0hy-kS-O6N"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="Yzm-gl-WPO" kind="embed" id="f0l-eD-cEg"/>
+                                </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAJ-Yg-Njc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
@@ -230,7 +234,51 @@
                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </collectionViewFlowLayout>
             </objects>
-            <point key="canvasLocation" x="-167.19999999999999" y="-501.49925037481262"/>
+            <point key="canvasLocation" x="-394" y="-502"/>
+        </scene>
+        <!--Highlight And Category View Controller-->
+        <scene sceneID="oJq-NM-fvO">
+            <objects>
+                <viewController id="Yzm-gl-WPO" customClass="HighlightAndCategoryViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cAN-gG-EaT"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ep-Tw-no7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAQ-jK-3e3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2A-Z7-Xvw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="x9x-uo-hyf"/>
+                                </constraints>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHr-bS-55D">
+                                <rect key="frame" x="0.0" y="274" width="375" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.16006095470000001" blue="0.1722343315" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="oN3-HG-e8c"/>
+                                </constraints>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V2A-Z7-Xvw" firstAttribute="leading" secondItem="bAQ-jK-3e3" secondAttribute="leading" id="0Fr-nf-Soy"/>
+                            <constraint firstItem="hHr-bS-55D" firstAttribute="leading" secondItem="bAQ-jK-3e3" secondAttribute="leading" id="Ig3-9o-Xa0"/>
+                            <constraint firstItem="hHr-bS-55D" firstAttribute="top" secondItem="V2A-Z7-Xvw" secondAttribute="bottom" id="QZ0-Dn-02P"/>
+                            <constraint firstAttribute="trailing" secondItem="hHr-bS-55D" secondAttribute="trailing" id="hFg-XP-Un7"/>
+                            <constraint firstAttribute="trailing" secondItem="V2A-Z7-Xvw" secondAttribute="trailing" id="l7q-Fg-goy"/>
+                            <constraint firstAttribute="bottom" secondItem="hHr-bS-55D" secondAttribute="bottom" id="xxp-cp-y5h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="highlightActivityContainerView" destination="V2A-Z7-Xvw" id="nV2-QV-KVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LF-gR-urr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="-488"/>
         </scene>
         <!--Highlight Activity View Controller-->
         <scene sceneID="NNt-l2-cN3">
@@ -241,13 +289,13 @@
                         <viewControllerLayoutGuide type="bottom" id="zi5-CS-epX"/>
                     </layoutGuides>
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="7BB-TU-A5T">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n9x-mH-CGt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="p7a-9e-iMk"/>
+                                    <constraint firstAttribute="height" constant="274" id="p7a-9e-iMk"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -260,14 +308,14 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="160"/>
+                    <size key="freeformSize" width="375" height="274"/>
                     <connections>
                         <outlet property="highlightImageView" destination="n9x-mH-CGt" id="1GW-yC-MNB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yd-6J-Vo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637.60000000000002" y="-272.56371814092955"/>
+            <point key="canvasLocation" x="582" y="-803"/>
         </scene>
     </scenes>
     <resources>
