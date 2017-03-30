@@ -36,3 +36,22 @@ extension UIColor {
     self.init(red: applicationColor.r, green: applicationColor.g, blue: applicationColor.b, alpha: applicationColor.a)
   }
 }
+
+public enum TextStyle {
+  
+  case mainCategory
+  
+  public var font: UIFont {
+    
+    switch self {
+    case .mainCategory: return UIFont(name: "Prompt-Medium", size: 16.0)!
+    }
+  }
+  
+  public var color: UIColor {
+    
+    switch self {
+    case .mainCategory: return UIColor.white
+    }
+  }
+}

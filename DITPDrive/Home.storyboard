@@ -68,7 +68,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9-10 กันยายน 60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htv-0r-aCG">
-                                                    <rect key="frame" x="31" y="226.5" width="112" height="20"/>
+                                                    <rect key="frame" x="31" y="227" width="112" height="20"/>
                                                     <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="13"/>
                                                     <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diamond Island Exhibition Cambodia" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-FL-MK6">
-                                                    <rect key="frame" x="31" y="256.5" width="135" height="39.5"/>
+                                                    <rect key="frame" x="31" y="257" width="135" height="39.5"/>
                                                     <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="13"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="งานแสดงสินค้าที่กำลังจะจัดแสดง" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-Ku-huU">
-                                            <rect key="frame" x="44.5" y="20.5" width="285.5" height="30.5"/>
+                                            <rect key="frame" x="45" y="20.5" width="285.5" height="30.5"/>
                                             <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -236,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="-394" y="-502"/>
         </scene>
-        <!--Highlight And Category View Controller-->
+        <!--Data Source-->
         <scene sceneID="oJq-NM-fvO">
             <objects>
                 <viewController id="Yzm-gl-WPO" customClass="HighlightAndCategoryViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
@@ -254,31 +254,36 @@
                                     <constraint firstAttribute="height" constant="274" id="x9x-uo-hyf"/>
                                 </constraints>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHr-bS-55D">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRd-No-53S" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="274" width="375" height="64"/>
-                                <color key="backgroundColor" red="1" green="0.16006095470000001" blue="0.1722343315" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="oN3-HG-e8c"/>
+                                    <constraint firstAttribute="height" constant="64" id="O4z-E9-pN6"/>
                                 </constraints>
-                            </containerView>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yzm-gl-WPO" id="c4U-aI-w5A"/>
+                                    <outlet property="delegate" destination="Yzm-gl-WPO" id="eN7-hI-GxX"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V2A-Z7-Xvw" firstAttribute="leading" secondItem="bAQ-jK-3e3" secondAttribute="leading" id="0Fr-nf-Soy"/>
-                            <constraint firstItem="hHr-bS-55D" firstAttribute="leading" secondItem="bAQ-jK-3e3" secondAttribute="leading" id="Ig3-9o-Xa0"/>
-                            <constraint firstItem="hHr-bS-55D" firstAttribute="top" secondItem="V2A-Z7-Xvw" secondAttribute="bottom" id="QZ0-Dn-02P"/>
-                            <constraint firstAttribute="trailing" secondItem="hHr-bS-55D" secondAttribute="trailing" id="hFg-XP-Un7"/>
+                            <constraint firstItem="4Ep-Tw-no7" firstAttribute="top" secondItem="hRd-No-53S" secondAttribute="bottom" id="2OV-b3-Mhq"/>
+                            <constraint firstItem="hRd-No-53S" firstAttribute="top" secondItem="V2A-Z7-Xvw" secondAttribute="bottom" id="Tno-N2-XdW"/>
+                            <constraint firstAttribute="trailing" secondItem="hRd-No-53S" secondAttribute="trailing" id="UAi-Cp-wZ2"/>
+                            <constraint firstItem="hRd-No-53S" firstAttribute="leading" secondItem="bAQ-jK-3e3" secondAttribute="leading" id="aGq-TZ-gnN"/>
                             <constraint firstAttribute="trailing" secondItem="V2A-Z7-Xvw" secondAttribute="trailing" id="l7q-Fg-goy"/>
-                            <constraint firstAttribute="bottom" secondItem="hHr-bS-55D" secondAttribute="bottom" id="xxp-cp-y5h"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryCarousel" destination="hRd-No-53S" id="bIZ-oC-os2"/>
                         <outlet property="highlightActivityContainerView" destination="V2A-Z7-Xvw" id="nV2-QV-KVc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5LF-gR-urr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="-488"/>
+            <point key="canvasLocation" x="581.60000000000002" y="-488.45577211394306"/>
         </scene>
         <!--Highlight Activity View Controller-->
         <scene sceneID="NNt-l2-cN3">

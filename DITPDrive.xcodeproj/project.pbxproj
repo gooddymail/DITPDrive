@@ -20,6 +20,9 @@
 		813656611E6D74C100C478CD /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 813656601E6D74C100C478CD /* activities.json */; };
 		81430B5F1E8CE2A20071B72D /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 811D37731E652900006195BB /* activity.json */; };
 		81430B601E8CE2A50071B72D /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 813656601E6D74C100C478CD /* activities.json */; };
+		81430B661E8CEFDA0071B72D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81430B651E8CEFDA0071B72D /* iCarousel.m */; };
+		81430B7C1E8D036D0071B72D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81430B7B1E8D036D0071B72D /* CategoryView.swift */; };
+		81430B7E1E8D098A0071B72D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81430B7D1E8D098A0071B72D /* UIViewExtension.swift */; };
 		814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */; };
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
@@ -92,6 +95,11 @@
 		813656581E6D4F9500C478CD /* ActivitiesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesWrapper.swift; sourceTree = "<group>"; };
 		8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		813656601E6D74C100C478CD /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
+		81430B631E8CEFD90071B72D /* DITPDrive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DITPDrive-Bridging-Header.h"; sourceTree = "<group>"; };
+		81430B641E8CEFDA0071B72D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		81430B651E8CEFDA0071B72D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		81430B7B1E8D036D0071B72D /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		81430B7D1E8D098A0071B72D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightAndCategoryViewController.swift; sourceTree = "<group>"; };
 		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		81788C541E6407FB00120471 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -170,6 +178,7 @@
 		8118021B1E7106F50092EC31 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				81430B7A1E8D035D0071B72D /* View */,
 				81FD34A51E77D184005D1404 /* HighlightActivity */,
 				8118021C1E7107060092EC31 /* Home.storyboard */,
 				8118021E1E71071E0092EC31 /* HomeViewController.swift */,
@@ -213,6 +222,23 @@
 				813656581E6D4F9500C478CD /* ActivitiesWrapper.swift */,
 			);
 			name = Activities;
+			sourceTree = "<group>";
+		};
+		81430B621E8CEFC50071B72D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				81430B641E8CEFDA0071B72D /* iCarousel.h */,
+				81430B651E8CEFDA0071B72D /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		81430B7A1E8D035D0071B72D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81430B7B1E8D036D0071B72D /* CategoryView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		81788C4F1E63FD2C00120471 /* Frameworks */ = {
@@ -322,7 +348,10 @@
 		81F223411E76875A008D4F41 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				81430B631E8CEFD90071B72D /* DITPDrive-Bridging-Header.h */,
+				81430B621E8CEFC50071B72D /* iCarousel */,
 				81F223421E76878F008D4F41 /* ApplicationStoryboard.swift */,
+				81430B7D1E8D098A0071B72D /* UIViewExtension.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -409,6 +438,7 @@
 					81A853CE1E63D86E00162642 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5EMLTG87JU;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					81A853E21E63D86E00162642 = {
@@ -512,10 +542,13 @@
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
 				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,
+				81430B661E8CEFDA0071B72D /* iCarousel.m in Sources */,
+				81430B7C1E8D036D0071B72D /* CategoryView.swift in Sources */,
 				81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */,
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */,
+				81430B7E1E8D098A0071B72D /* UIViewExtension.swift in Sources */,
 				814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */,
 				81FD34A41E77B029005D1404 /* Theme.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
@@ -658,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5EMLTG87JU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -667,6 +701,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ditp.DITPDrive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DITPDrive/DITPDrive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -676,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5EMLTG87JU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,6 +722,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ditp.DITPDrive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DITPDrive/DITPDrive-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
