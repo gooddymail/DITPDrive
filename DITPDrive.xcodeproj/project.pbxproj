@@ -18,6 +18,8 @@
 		8136565D1E6D729C00C478CD /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; };
 		8136565F1E6D72BD00C478CD /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		813656611E6D74C100C478CD /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 813656601E6D74C100C478CD /* activities.json */; };
+		81430B5F1E8CE2A20071B72D /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 811D37731E652900006195BB /* activity.json */; };
+		81430B601E8CE2A50071B72D /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 813656601E6D74C100C478CD /* activities.json */; };
 		814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */; };
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
@@ -458,8 +460,10 @@
 				8118021D1E7107060092EC31 /* Home.storyboard in Resources */,
 				81AE81CF1E83D38700B491A6 /* Prompt-MediumItalic.ttf in Resources */,
 				81AE81C91E83D38700B491A6 /* Prompt-ExtraLight.ttf in Resources */,
+				81430B5F1E8CE2A20071B72D /* activity.json in Resources */,
 				81AE81CE1E83D38700B491A6 /* Prompt-Medium.ttf in Resources */,
 				81AE81D01E83D38700B491A6 /* Prompt-Regular.ttf in Resources */,
+				81430B601E8CE2A50071B72D /* activities.json in Resources */,
 				81AE81CD1E83D38700B491A6 /* Prompt-LightItalic.ttf in Resources */,
 				81AE81C61E83D38700B491A6 /* Prompt-BoldItalic.ttf in Resources */,
 				81AE81D41E83D38700B491A6 /* Prompt-ThinItalic.ttf in Resources */,
@@ -661,10 +665,10 @@
 				);
 				INFOPLIST_FILE = DITPDrive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kpoolpipat.DITPDrive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ditp.DITPDrive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -679,10 +683,10 @@
 				);
 				INFOPLIST_FILE = DITPDrive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kpoolpipat.DITPDrive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ditp.DITPDrive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

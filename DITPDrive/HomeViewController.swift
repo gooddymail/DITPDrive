@@ -75,6 +75,7 @@ extension HomeViewController: UICollectionViewDataSource {
       return headerView
     default:
       assert(false, "Unexpected element kind")
+      return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionTitleCollectionReusableView.identifier(), for: indexPath)
     }
   }
   

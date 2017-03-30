@@ -11,6 +11,7 @@ import UIKit
 class ApplicationPageViewController: UIPageViewController {
   
   var contentViewControllers: [UIViewController]?
+  var currentPage: Int = 0
   
   convenience init(contentViewControllersInPageView contentViewControllers: [UIViewController]?) {
     self.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
@@ -22,6 +23,7 @@ class ApplicationPageViewController: UIPageViewController {
     super.viewDidLoad()
     
     setupPageControlContent()
+    Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(autoPageScroll), userInfo: nil, repeats: true)
   }
   
   override func viewDidLayoutSubviews() {
@@ -48,6 +50,20 @@ class ApplicationPageViewController: UIPageViewController {
     }
   }
   
+  @objc fileprivate func autoPageScroll() {
+    guard let contentViewControllers = contentViewControllers else { return }
+    var controllerToScroll = contentViewControllers[currentPage]
+    
+    if currentPage == contentViewControllers.count - 1 {
+      currentPage = 0
+      controllerToScroll = contentViewControllers.first!
+    } else {
+      currentPage = currentPage + 1
+      controllerToScroll = contentViewControllers[currentPage]
+    }
+    self.setViewControllers([controllerToScroll], direction: .forward, animated: true, completion: nil)
+  }
+  
   
 }
 
@@ -69,7 +85,7 @@ extension ApplicationPageViewController: UIPageViewControllerDataSource {
         return 0
     }
     
-    return firstViewControllerIndex
+    return currentPage
   }
   
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -82,13 +98,14 @@ extension ApplicationPageViewController: UIPageViewControllerDataSource {
     let previousIndex = viewControllerIndex - 1
     
     guard previousIndex >= 0  else {
+      currentPage = contentViewControllers.count - 1
       return contentViewControllers.last
     }
     
     guard contentViewControllers.count > previousIndex else {
       return nil
     }
-    
+    currentPage = previousIndex
     return contentViewControllers[previousIndex]
   }
   
@@ -99,16 +116,18 @@ extension ApplicationPageViewController: UIPageViewControllerDataSource {
       return nil
     }
     
+    currentPage = viewControllerIndex
     let nextIndex = viewControllerIndex + 1
     
     guard contentViewControllers.count != nextIndex else {
+      currentPage = 0
       return contentViewControllers.first
     }
     
     guard contentViewControllers.count > nextIndex else {
       return nil
     }
-    
+    currentPage = nextIndex
     return contentViewControllers[nextIndex]
   }
 }
