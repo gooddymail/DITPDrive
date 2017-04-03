@@ -32,7 +32,7 @@ class ActivityModelTests: XCTestCase {
     
     let activity = try! Activity(json: json!)
     XCTAssertNotNil(activity)
-    XCTAssertEqual(activity?.name, "โครงการพัฒนาและส่งเสริมสินค้าหนึ่งตำบล หนึ่งผลิตภัณฑ์ (OTOP) เพื่อการส่งออก")
+    XCTAssertEqual(activity?.name, "งาน Thailand gem and jewelry")
   }
   
   func testInitailizeActivityShouldThrowErrorWhenImportantInformationIsMissing() {
@@ -63,9 +63,8 @@ class ActivityModelTests: XCTestCase {
                                  statusCode: 200,
                                  headers: nil)
     }
-    var homeActivityWrapper: HomeActivityWrapper?
     DITPDriveAPI.instance.getHomeActivities() { result in
-      homeActivityWrapper = result.value
+      guard let homeActivityWrapper = result.value else { return XCTFail() }
       XCTAssertNotNil(homeActivityWrapper.highlightActivities)
       XCTAssertEqual(homeActivityWrapper.highlightActivities.count, 3, "Home api should return 3 highlight activity")
       

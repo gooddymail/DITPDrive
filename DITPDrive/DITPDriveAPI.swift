@@ -25,7 +25,13 @@ final class DITPDriveAPI {
         completionHandler(.failure(error))
         return
       }
-      let homeActivitiesWrapperResult = HomeActivitiesWrapper()
+      var homeActivitiesWrapperResult: HomeActivitiesWrapper?
+      do {
+        homeActivitiesWrapperResult = try HomeActivitiesWrapper(json: response.result.value as! [String: Any])
+      } catch let error {
+        completionHandler(.failure(error))
+      }
+      completionHandler(.success(homeActivitiesWrapperResult!))
     }
   }
   
