@@ -18,9 +18,8 @@ struct Activity {
   public let eventPlace: String
   public let eventDescription: String
   public let favorite: Bool
-  public let responsibleDepartment: String?
-  public let tel: String?
-  public let contactPerson: String?
+  public let contactNumbers: [String]?
+  public let contactPersons: [String]?
   public let thumbnailImage: URL?
   public let bannerImage: URL?
   public let available: Int?
@@ -49,10 +48,9 @@ struct Activity {
     self.thumbnailImage = URL(string: thumbnailImage)
     self.bannerImage = URL(string: bannerImage)
     self.favorite = favorite
-    
-    self.responsibleDepartment = json["responsible-department"] as! String?
-    self.tel = json["tel"] as! String?
-    self.contactPerson = json["contact-person"] as! String?
+  
+    self.contactNumbers = json["contact_name"] as! [String]?
+    self.contactPersons = json["contact_name"] as! [String]?
     self.type = json["activity_type"] as! String?
     self.available = json["available"] as! Int?
   }
