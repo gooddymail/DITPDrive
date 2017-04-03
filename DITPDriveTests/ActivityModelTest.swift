@@ -15,11 +15,6 @@ class ActivityModelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-      stub(condition: isHost("ditpdrive.com") && isPath("activities")) { request in
-        return OHHTTPStubsResponse(fileAtPath: OHPathForFile("activities.json", type(of: self))!,
-                                   statusCode: 200,
-                                   headers: nil)
-      }
     }
     
     override func tearDown() {
@@ -50,11 +45,39 @@ class ActivityModelTests: XCTestCase {
   }
   
   func testGetActivitiesFromServer() {
+    stub(condition: isHost("ditpdrive.com") && isPath("activities")) { request in
+      return OHHTTPStubsResponse(fileAtPath: OHPathForFile("activities.json", type(of: self))!,
+                                 statusCode: 200,
+                                 headers: nil)
+    }
     var activitiesWrapper: ActivitiesWrapper?
     DITPDriveAPI.instance.getActivities(nil) { result in
       activitiesWrapper = result.value
       XCTAssertEqual(activitiesWrapper?.count, 3)
     }
   }
-    
+  
+  func testGetHomeActivitiesFromServer() {
+    stub(condition: isHost("ditpdrive.com") && isPath("activities/home")) { request in
+      return OHHTTPStubsResponse(fileAtPath: OHPathForFile("homeActivities.json", type(of: self))!,
+                                 statusCode: 200,
+                                 headers: nil)
+    }
+    var homeActivityWrapper: HomeActivityWrapper?
+    DITPDriveAPI.instance.getHomeActivities() { result in
+      homeActivityWrapper = result.value
+      XCTAssertNotNil(homeActivityWrapper.highlightActivities)
+      XCTAssertEqual(homeActivityWrapper.highlightActivities.count, 3, "Home api should return 3 highlight activity")
+      
+      XCTAssertNotNil(homeActivityWrapper.nationalActivities)
+      XCTAssertEqual(homeActivityWrapper.nationalActivities.count, 3, "Home api should return 3 national activity")
+      
+      XCTAssertNotNil(homeActivityWrapper.overseaActivities)
+      XCTAssertEqual(homeActivityWrapper.overseaActivities.count, 3, "Home api should return 3 oversea activity")
+      
+      XCTAssertNotNil(homeActivityWrapper.seminar)
+      XCTAssertEqual(homeActivityWrapper.seminar.count, 3, "Home api should return 3 seminar activity")
+    }
+  }
+  
 }

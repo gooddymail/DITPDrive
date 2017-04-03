@@ -1,0 +1,127 @@
+{
+  "status": "ok",
+  "highlight": [{
+                "name": "งาน Thailand gem and jewelry",
+                "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                "id": 1,
+                "thumbnail_image": "www.image.com",
+                "banner_image": "www.image.com",
+                "fair_location": "ไบเทค บางนา",
+                "register_start_date": "14/11/2017",
+                "register_end_date": "10/12/2017",
+                "favorite": true
+                }, {
+                "name": "งาน Thailand gem and jewelry",
+                "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                "id": 2,
+                "thumbnail_image": "www.image.com",
+                "banner_image": "www.image.com",
+                "fair_location": "ไบเทค บางนา",
+                "register_start_date": "14/11/2017",
+                "register_end_date": "10/12/2017",
+                "favorite": true
+                }, {
+                "name": "งาน Thailand gem and jewelry",
+                "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                "id": 3,
+                "thumbnail_image": "www.image.com",
+                "banner_image": "www.image.com",
+                "fair_location": "ไบเทค บางนา",
+                "register_start_date": "14/11/2017",
+                "register_end_date": "10/12/2017",
+                "favorite": true
+                }],
+  "national_event": [{
+                     "name": "งาน Thailand gem and jewelry",
+                     "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                     "id": 1,
+                     "thumbnail_image": "www.image.com",
+                     "banner_image": "www.image.com",
+                     "event_location": "ไบเทค บางนา",
+                     "register_start_date": "14/11/2017",
+                     "register_end_date": "10/12/2017",
+                     "favorite": true
+                     }, {
+                     "name": "งาน Thailand gem and jewelry",
+                     "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                     "id": 2,
+                     "thumbnail_image": "www.image.com",
+                     "banner_image": "www.image.com",
+                     "fair_location": "ไบเทค บางนา",
+                     "register_start_date": "14/11/2017",
+                     "register_end_date": "10/12/2017",
+                     "favorite": true
+                     }, {
+                     "name": "งาน Thailand gem and jewelry",
+                     "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                     "id": 3,
+                     "thumbnail_image": "www.image.com",
+                     "banner_image": "www.image.com",
+                     "fair_location": "ไบเทค บางนา",
+                     "register_start_date": "14/11/2017",
+                     "register_end_date": "10/12/2017",
+                     "favorite": true
+                     }],
+  "oversea_event": [{
+                    "name": "งาน Thailand gem and jewelry",
+                    "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                    "id": 1,
+                    "thumbnail_image": "www.image.com",
+                    "banner_image": "www.image.com",
+                    "fair_location": "ไบเทค บางนา",
+                    "register_start_date": "14/11/2017",
+                    "register_end_date": "10/12/2017",
+                    "favorite": true
+                    }, {
+                    "name": "งาน Thailand gem and jewelry",
+                    "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                    "id": 2,
+                    "thumbnail_image": "www.image.com",
+                    "banner_image": "www.image.com",
+                    "event_location": "ไบเทค บางนา",
+                    "register_start_date": "14/11/2017",
+                    "register_end_date": "10/12/2017",
+                    "favorite": true
+                    }, {
+                    "name": "งาน Thailand gem and jewelry",
+                    "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+                    "id": 3,
+                    "thumbnail_image": "www.image.com",
+                    "banner_image": "www.image.com",
+                    "fair_location": "ไบเทค บางนา",
+                    "register_start_date": "14/11/2017",
+                    "register_end_date": "10/12/2017",
+                    "favorite": true
+                    }],
+  "seminar": [{
+              "name": "งาน Thailand gem and jewelry",
+              "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+              "id": 1,
+              "thumbnail_image": "www.image.com",
+              "banner_image": "www.image.com",
+              "event_location": "ไบเทค บางนา",
+              "register_start_date": "14/11/2017",
+              "register_end_date": "10/12/2017",
+              "favorite": true
+              }, {
+              "name": "งาน Thailand gem and jewelry",
+              "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+              "id": 2,
+              "thumbnail_image": "www.image.com",
+              "banner_image": "www.image.com",
+              "fair_location": "ไบเทค บางนา",
+              "register_start_date": "14/11/2017",
+              "register_end_date": "10/12/2017",
+              "favorite": true
+              }, {
+              "name": "งาน Thailand gem and jewelry",
+              "description": "งานทีจัดมาอย่างยาวนานเกี่ยวกับเครื่องประดับต่างๆ",
+              "id": 3,
+              "thumbnail_image": "www.image.com",
+              "banner_image": "www.image.com",
+              "fair_location": "ไบเทค บางนา",
+              "register_start_date": "14/11/2017",
+              "register_end_date": "10/12/2017",
+              "favorite": true
+              }]
+}
