@@ -13,25 +13,29 @@ enum Router: URLRequestConvertible {
   
   // MARK: - Case
   case activity(page: Int?)
+  case homeActivities
   
   // MARK: - BaseURL
   static let baseURL: URL = URL(string: "https://ditpdrive.com")!
   
   var path: String {
     switch self {
-    case .activity(_): return "/activities/"
+      case .activity(_): return "/activities/"
+      case .homeActivities: return "/activities/home"
     }
   }
   
   var httpMethod: Alamofire.HTTPMethod {
     switch self {
-    case .activity(_): return .get
+      case .activity(_): return .get
+      case .homeActivities: return .get
     }
   }
   
-  var parameters: [String: Any?] {
+  var parameters: [String: Any]? {
     switch self {
-    case .activity(let page): return ["page": page]
+      case .activity(let page): return ["page": page ?? 1]
+      default: return nil
     }
   }
   
