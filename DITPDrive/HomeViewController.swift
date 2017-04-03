@@ -61,7 +61,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource {
   
   func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return 1
+    return 3
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -71,7 +71,14 @@ extension HomeViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
     switch kind {
     case UICollectionElementKindSectionHeader:
-      let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionTitleCollectionReusableView.identifier(), for: indexPath)
+      let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionTitleCollectionReusableView.identifier(), for: indexPath) as! SectionTitleCollectionReusableView
+      switch indexPath.section {
+      case 0: headerView.titleLabel.text = "งานแสดงสินค้าที่กำลังจัดแสดง"
+      case 1: headerView.titleLabel.text = "งานแสดงสินค้านานาชาติภายในประเทศ"
+      case 2: headerView.titleLabel.text = "งานแสดงสินค้าในต่างประเทศ"
+      default: headerView.titleLabel.text = ""
+      }
+      
       return headerView
     default:
       assert(false, "Unexpected element kind")
