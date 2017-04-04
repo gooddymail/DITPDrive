@@ -9,6 +9,10 @@
 import UIKit
 
 class ActivityDetailViewController: UIViewController {
+  @IBOutlet weak var tableView: UITableView!
+  
+  private let kTableHeaderHeight: CGFloat = 345
+  var headerView: UIView!
   
   override var prefersStatusBarHidden: Bool {
     return true
@@ -17,18 +21,39 @@ class ActivityDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 300
+    headerView = tableView.tableHeaderView
+    tableView.tableHeaderView = nil
+    tableView.addSubview(headerView)
+    tableView.contentInset = UIEdgeInsets(top: kTableHeaderHeight, left: 0, bottom: 0, right: 0)
+    tableView.contentOffset = CGPoint(x: 0, y: -kTableHeaderHeight)
+    
+    updateHeaderView()
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+    
   }
   
   class func controller() -> ActivityDetailViewController {
     return UIStoryboard.activityDetailStoryboard().instantiateViewController(withIdentifier: "ActivityDetailViewController") as! ActivityDetailViewController
   }
   
+  func updateHeaderView() {
+    var headerRect = CGRect(x: 0, y: -kTableHeaderHeight, width: tableView.bounds.width, height: kTableHeaderHeight)
+    if tableView.contentOffset.y < -kTableHeaderHeight {
+      headerRect.origin.y = tableView.contentOffset.y
+      headerRect.size.height = -tableView.contentOffset.y
+    }
+    
+    headerView.frame = headerRect
+  }
+  
+  @IBAction func backTapped(_ sender: Any) {
+    navigationController?.popViewController(animated: true)
+  }
   /*
    // MARK: - Navigation
    
@@ -39,4 +64,41 @@ class ActivityDetailViewController: UIViewController {
    }
    */
   
+}
+
+extension ActivityDetailViewController: UITableViewDataSource {
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 3
+  }
+  
+  func cellIdentifier(at indexPath: IndexPath) -> String {
+    switch indexPath.row {
+    case 0: return ActivityDetailTableViewCell.identifier()
+    case 1: return ActivityMapTableViewCell.identifier()
+    case 2: return ActivityDescriptionTableViewCell.identifier()
+    default:
+      return ""
+    }
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let identifier = cellIdentifier(at: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+    
+    return cell
+  }
+}
+
+extension ActivityDetailViewController: UITableViewDelegate {
+  
+}
+
+extension ActivityDetailViewController: UIScrollViewDelegate {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    updateHeaderView()
+  }
 }

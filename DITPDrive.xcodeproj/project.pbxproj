@@ -25,6 +25,9 @@
 		81430B7E1E8D098A0071B72D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81430B7D1E8D098A0071B72D /* UIViewExtension.swift */; };
 		814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */; };
 		816C0BC91E9355B800D916B6 /* ApplicationBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C0BC81E9355B800D916B6 /* ApplicationBaseViewController.swift */; };
+		816C0BEF1E9383C200D916B6 /* ActivityDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C0BEE1E9383C200D916B6 /* ActivityDetailTableViewCell.swift */; };
+		816C0BF21E93915B00D916B6 /* ActivityMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C0BF11E93915B00D916B6 /* ActivityMapTableViewCell.swift */; };
+		816C0BF41E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C0BF31E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift */; };
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
 		81788C891E641B2200120471 /* ActivityModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C881E641B2200120471 /* ActivityModelTest.swift */; };
@@ -108,6 +111,9 @@
 		81430B7D1E8D098A0071B72D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightAndCategoryViewController.swift; sourceTree = "<group>"; };
 		816C0BC81E9355B800D916B6 /* ApplicationBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationBaseViewController.swift; sourceTree = "<group>"; };
+		816C0BEE1E9383C200D916B6 /* ActivityDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailTableViewCell.swift; sourceTree = "<group>"; };
+		816C0BF11E93915B00D916B6 /* ActivityMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMapTableViewCell.swift; sourceTree = "<group>"; };
+		816C0BF31E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		81788C541E6407FB00120471 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		81788C881E641B2200120471 /* ActivityModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModelTest.swift; sourceTree = "<group>"; };
@@ -257,6 +263,16 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		816C0BF01E9383C900D916B6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				816C0BEE1E9383C200D916B6 /* ActivityDetailTableViewCell.swift */,
+				816C0BF11E93915B00D916B6 /* ActivityMapTableViewCell.swift */,
+				816C0BF31E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		81788C4F1E63FD2C00120471 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +294,7 @@
 		8182A3031E92432600CD8DBE /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
+				816C0BF01E9383C900D916B6 /* Cell */,
 				8182A3041E92435000CD8DBE /* ActivityDetailStoryboard.storyboard */,
 				8182A3061E92436900CD8DBE /* ActivityDetailViewController.swift */,
 				8182A3081E92560A00CD8DBE /* GradientView.swift */,
@@ -578,12 +595,15 @@
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
 				81F223451E76A93F008D4F41 /* IntroContainerViewController.swift in Sources */,
+				816C0BF21E93915B00D916B6 /* ActivityMapTableViewCell.swift in Sources */,
 				81430B7E1E8D098A0071B72D /* UIViewExtension.swift in Sources */,
+				816C0BF41E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift in Sources */,
 				814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */,
 				81FD34A41E77B029005D1404 /* Theme.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
 				8182A3021E92077900CD8DBE /* HomeActivitiesWrapper.swift in Sources */,
 				818609821E88D29400BE9211 /* HomeActivityCollectionViewCell.swift in Sources */,
+				816C0BEF1E9383C200D916B6 /* ActivityDetailTableViewCell.swift in Sources */,
 				813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */,
 				816C0BC91E9355B800D916B6 /* ApplicationBaseViewController.swift in Sources */,
 			);

@@ -33,6 +33,10 @@ class HomeViewController: ApplicationBaseViewController {
     
   }
   
+  class func controller() -> HomeViewController {
+    return UIStoryboard.homeStoryboard().instantiateViewController(withIdentifier: "home") as! HomeViewController
+  }
+  
   fileprivate func updateHeaderView() {
     var headerReact = CGRect(x: 0, y: 0, width: hightlightActivityContainerView.frame.size.width, height: kCollectionHeaderHeight)
     headerReact.origin.y = -collectionView.contentOffset.y
@@ -95,10 +99,8 @@ extension HomeViewController: UICollectionViewDataSource {
 extension HomeViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let activityDetailVC = ActivityDetailViewController.controller()
-    activityDetailVC.modalPresentationStyle = .currentContext
-    self.present(activityDetailVC, animated: true, completion: {
-//      UIApplication.shared.isStatusBarHidden = true
-    })
+    activityDetailVC.hidesBottomBarWhenPushed = true
+    navigationController?.pushViewController(activityDetailVC, animated: true)
   }
 }
 
