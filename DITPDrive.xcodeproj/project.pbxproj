@@ -24,11 +24,15 @@
 		81430B7C1E8D036D0071B72D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81430B7B1E8D036D0071B72D /* CategoryView.swift */; };
 		81430B7E1E8D098A0071B72D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81430B7D1E8D098A0071B72D /* UIViewExtension.swift */; };
 		814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */; };
+		816C0BC91E9355B800D916B6 /* ApplicationBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C0BC81E9355B800D916B6 /* ApplicationBaseViewController.swift */; };
 		81788C511E63FD2C00120471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81788C501E63FD2C00120471 /* Alamofire.framework */; };
 		81788C551E6407FB00120471 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C541E6407FB00120471 /* Activity.swift */; };
 		81788C891E641B2200120471 /* ActivityModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81788C881E641B2200120471 /* ActivityModelTest.swift */; };
 		8182A3001E92036200CD8DBE /* homeActivities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8182A2FF1E92036200CD8DBE /* homeActivities.json */; };
 		8182A3021E92077900CD8DBE /* HomeActivitiesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182A3011E92077900CD8DBE /* HomeActivitiesWrapper.swift */; };
+		8182A3051E92435000CD8DBE /* ActivityDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8182A3041E92435000CD8DBE /* ActivityDetailStoryboard.storyboard */; };
+		8182A3071E92436900CD8DBE /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182A3061E92436900CD8DBE /* ActivityDetailViewController.swift */; };
+		8182A3091E92560A00CD8DBE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182A3081E92560A00CD8DBE /* GradientView.swift */; };
 		818609801E88C7A400BE9211 /* SectionTitleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186097F1E88C7A400BE9211 /* SectionTitleCollectionReusableView.swift */; };
 		818609821E88D29400BE9211 /* HomeActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818609811E88D29400BE9211 /* HomeActivityCollectionViewCell.swift */; };
 		81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853D21E63D86E00162642 /* AppDelegate.swift */; };
@@ -103,11 +107,15 @@
 		81430B7B1E8D036D0071B72D /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		81430B7D1E8D098A0071B72D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		814663D41E8B891F00A42E01 /* HighlightAndCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightAndCategoryViewController.swift; sourceTree = "<group>"; };
+		816C0BC81E9355B800D916B6 /* ApplicationBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationBaseViewController.swift; sourceTree = "<group>"; };
 		81788C501E63FD2C00120471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		81788C541E6407FB00120471 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		81788C881E641B2200120471 /* ActivityModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModelTest.swift; sourceTree = "<group>"; };
 		8182A2FF1E92036200CD8DBE /* homeActivities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeActivities.json; sourceTree = "<group>"; };
 		8182A3011E92077900CD8DBE /* HomeActivitiesWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeActivitiesWrapper.swift; sourceTree = "<group>"; };
+		8182A3041E92435000CD8DBE /* ActivityDetailStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		8182A3061E92436900CD8DBE /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		8182A3081E92560A00CD8DBE /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8186097F1E88C7A400BE9211 /* SectionTitleCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTitleCollectionReusableView.swift; sourceTree = "<group>"; };
 		818609811E88D29400BE9211 /* HomeActivityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 		81A853CF1E63D86E00162642 /* DITPDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITPDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,9 +180,11 @@
 		8118021A1E7106870092EC31 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8182A3031E92432600CD8DBE /* ActivityDetail */,
 				81FD34A61E77D1E7005D1404 /* ApplicationPageController */,
 				81F2233E1E768527008D4F41 /* Intro */,
 				8118021B1E7106F50092EC31 /* Home */,
+				816C0BC81E9355B800D916B6 /* ApplicationBaseViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +273,16 @@
 				813656571E6D4F8000C478CD /* Activities */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		8182A3031E92432600CD8DBE /* ActivityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8182A3041E92435000CD8DBE /* ActivityDetailStoryboard.storyboard */,
+				8182A3061E92436900CD8DBE /* ActivityDetailViewController.swift */,
+				8182A3081E92560A00CD8DBE /* GradientView.swift */,
+			);
+			name = ActivityDetail;
 			sourceTree = "<group>";
 		};
 		81A853C61E63D86E00162642 = {
@@ -495,6 +515,7 @@
 				81AE81CB1E83D38700B491A6 /* Prompt-Italic.ttf in Resources */,
 				8118021D1E7107060092EC31 /* Home.storyboard in Resources */,
 				81AE81CF1E83D38700B491A6 /* Prompt-MediumItalic.ttf in Resources */,
+				8182A3051E92435000CD8DBE /* ActivityDetailStoryboard.storyboard in Resources */,
 				81AE81C91E83D38700B491A6 /* Prompt-ExtraLight.ttf in Resources */,
 				81430B5F1E8CE2A20071B72D /* activity.json in Resources */,
 				81AE81CE1E83D38700B491A6 /* Prompt-Medium.ttf in Resources */,
@@ -544,6 +565,7 @@
 			files = (
 				818609801E88C7A400BE9211 /* SectionTitleCollectionReusableView.swift in Sources */,
 				81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */,
+				8182A3091E92560A00CD8DBE /* GradientView.swift in Sources */,
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
 				81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
@@ -551,6 +573,7 @@
 				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,
 				81430B661E8CEFDA0071B72D /* iCarousel.m in Sources */,
 				81430B7C1E8D036D0071B72D /* CategoryView.swift in Sources */,
+				8182A3071E92436900CD8DBE /* ActivityDetailViewController.swift in Sources */,
 				81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */,
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
@@ -562,6 +585,7 @@
 				8182A3021E92077900CD8DBE /* HomeActivitiesWrapper.swift in Sources */,
 				818609821E88D29400BE9211 /* HomeActivityCollectionViewCell.swift in Sources */,
 				813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */,
+				816C0BC91E9355B800D916B6 /* ApplicationBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

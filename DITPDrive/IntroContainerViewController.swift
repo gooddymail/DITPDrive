@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroContainerViewController: UIViewController {
+class IntroContainerViewController: ApplicationBaseViewController {
   
   @IBOutlet weak var introStepContainerView: UIView!
   
@@ -23,7 +23,6 @@ class IntroContainerViewController: UIViewController {
   }
   
   fileprivate func setupIntroPageView() {
-    
     let introStepPageViewController = ApplicationPageViewController(contentViewControllersInPageView: [self.introStepViewController(withIdentifier: "step1"),
                                                                                                        self.introStepViewController(withIdentifier: "step2"),
                                                                                                        self.introStepViewController(withIdentifier: "step3")])

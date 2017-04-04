@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: ApplicationBaseViewController {
   
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var hightlightActivityContainerView: UIView!
@@ -89,6 +89,16 @@ extension HomeViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeActivityCollectionViewCell.identifier(), for: indexPath)
     return cell
+  }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let activityDetailVC = ActivityDetailViewController.controller()
+    activityDetailVC.modalPresentationStyle = .currentContext
+    self.present(activityDetailVC, animated: true, completion: {
+//      UIApplication.shared.isStatusBarHidden = true
+    })
   }
 }
 
