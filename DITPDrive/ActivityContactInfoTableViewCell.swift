@@ -9,6 +9,10 @@
 import UIKit
 
 class ActivityContactInfoTableViewCell: UITableViewCell {
+  @IBOutlet weak var responderDepartmentNameLabel: UILabel!
+  @IBOutlet weak var contactorNameLabel: UILabel!
+  @IBOutlet weak var telButton: UIButton!
+  @IBOutlet weak var emailButton: UIButton!
   
   override func awakeFromNib() {
     super.awakeFromNib()

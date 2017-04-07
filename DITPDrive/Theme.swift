@@ -13,11 +13,13 @@ import UIKit
 public enum ApplicationColor {
   case yellow
   case purple
+  case blue
   
   var rgba: [CGFloat] {
     switch self {
     case .yellow: return [200.0 / 255.0, 200.0 / 255.0, 200.0 / 255.0, 1.0]
     case .purple: return [0.0 / 255.0, 4.0 / 255.0, 38.0 / 255.0, 1.0]
+    case .blue: return [32.0 / 255.0, 129.0 / 255.0, 241.0 / 255.0, 1.0]
     }
   }
   
@@ -40,11 +42,13 @@ extension UIColor {
 public enum TextStyle {
   
   case mainCategory
+  case attachmentButton
   
   public var font: UIFont {
     
     switch self {
     case .mainCategory: return UIFont(name: "Prompt-Medium", size: 16.0)!
+    case .attachmentButton: return UIFont(name: "Prompt-Medium", size: 14)!
     }
   }
   
@@ -52,6 +56,7 @@ public enum TextStyle {
     
     switch self {
     case .mainCategory: return UIColor.white
+    case .attachmentButton: return UIColor(applicationColor: .blue)
     }
   }
 }

@@ -13,7 +13,13 @@ class ActivityDocumentTableViewCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+    
+    let attachmentView = AttachmentDocumentView()
+    let views: [String: UIView] = ["attachmentView": attachmentView]
+    
+    documentContainerView.addAutoLayoutSubviews(views)
+    documentContainerView.addConstraints(withVisualFormat: "V:|-0-[attachmentView]-0-|", views: views)
+    documentContainerView.addConstraints(withVisualFormat: "H:|-0-[attachmentView]-0-|", views: views)
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {

@@ -69,6 +69,7 @@
 		81FD34A91E77E35C005D1404 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; };
 		81FD34AB1E77E35E005D1404 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FD34AA1E77E35E005D1404 /* SDWebImage.framework */; };
 		81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */; };
+		E11108D41E9779E2004D0584 /* AttachmentDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */; };
 		E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */; };
 		E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */; };
 		E18BB4801E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47F1E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift */; };
@@ -161,6 +162,7 @@
 		81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationPageViewController.swift; sourceTree = "<group>"; };
 		81FD34AA1E77E35E005D1404 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightActivityViewController.swift; sourceTree = "<group>"; };
+		E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentDocumentView.swift; sourceTree = "<group>"; };
 		E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBoothDetailTableViewCell.swift; sourceTree = "<group>"; };
 		E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDocumentTableViewCell.swift; sourceTree = "<group>"; };
 		E18BB47F1E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityContactInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		8182A3031E92432600CD8DBE /* ActivityDetail */ = {
 			isa = PBXGroup;
 			children = (
+				E11108D21E9779B6004D0584 /* View */,
 				816C0BF01E9383C900D916B6 /* Cell */,
 				8182A3041E92435000CD8DBE /* ActivityDetailStoryboard.storyboard */,
 				8182A3061E92436900CD8DBE /* ActivityDetailViewController.swift */,
@@ -435,6 +438,14 @@
 				81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */,
 			);
 			name = ApplicationPageController;
+			sourceTree = "<group>";
+		};
+		E11108D21E9779B6004D0584 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,6 +604,7 @@
 				81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */,
 				8182A3091E92560A00CD8DBE /* GradientView.swift in Sources */,
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
+				E11108D41E9779E2004D0584 /* AttachmentDocumentView.swift in Sources */,
 				E18BB4801E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift in Sources */,
 				81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */,
 				E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */,

@@ -10,6 +10,8 @@ import UIKit
 
 class ActivityDetailViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var registerButton: UIButton!
+  @IBOutlet weak var priceLabel: UILabel!
   
   private let kTableHeaderHeight: CGFloat = 345
   var headerView: UIView!
@@ -21,15 +23,7 @@ class ActivityDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.rowHeight = UITableViewAutomaticDimension
-    tableView.estimatedRowHeight = 300
-    headerView = tableView.tableHeaderView
-    tableView.tableHeaderView = nil
-    tableView.addSubview(headerView)
-    tableView.contentInset = UIEdgeInsets(top: kTableHeaderHeight, left: 0, bottom: 0, right: 0)
-    tableView.contentOffset = CGPoint(x: 0, y: -kTableHeaderHeight)
-    
-    updateHeaderView()
+    setupView()
   }
   
   override func didReceiveMemoryWarning() {
@@ -39,6 +33,20 @@ class ActivityDetailViewController: UIViewController {
   
   class func controller() -> ActivityDetailViewController {
     return UIStoryboard.activityDetailStoryboard().instantiateViewController(withIdentifier: "ActivityDetailViewController") as! ActivityDetailViewController
+  }
+  
+  func setupView() {
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 300
+    headerView = tableView.tableHeaderView
+    tableView.tableHeaderView = nil
+    tableView.addSubview(headerView)
+    tableView.contentInset = UIEdgeInsets(top: kTableHeaderHeight, left: 0, bottom: 85, right: 0)
+    tableView.contentOffset = CGPoint(x: 0, y: -kTableHeaderHeight)
+    
+    updateHeaderView()
+    
+    registerButton.layer.cornerRadius = 7.0
   }
   
   func updateHeaderView() {
@@ -54,6 +62,10 @@ class ActivityDetailViewController: UIViewController {
   @IBAction func backTapped(_ sender: Any) {
     navigationController?.popViewController(animated: true)
   }
+  
+  @IBAction func registerTapped(_ sender: Any) {
+  }
+  
   /*
    // MARK: - Navigation
    

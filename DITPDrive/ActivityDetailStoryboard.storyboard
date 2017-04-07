@@ -425,39 +425,41 @@
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="KeU-hJ-NVK">
-                                                    <rect key="frame" x="25" y="129.5" width="325" height="23"/>
+                                                    <rect key="frame" x="25" y="129.5" width="325" height="15"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="telicon" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-Xm-2Sn">
-                                                            <rect key="frame" x="0.0" y="4" width="15" height="15"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="15" id="6G8-Md-noq"/>
                                                                 <constraint firstAttribute="height" constant="15" id="NGa-xL-QgB"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="02 507 8369" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbL-zI-tZI">
-                                                            <rect key="frame" x="38" y="1" width="287" height="21.5"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB6-Xt-FaH">
+                                                            <rect key="frame" x="38" y="0.0" width="287" height="15"/>
                                                             <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
-                                                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <state key="normal" title="02 507 8369">
+                                                                <color key="titleColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="bBs-RO-3TK">
-                                                    <rect key="frame" x="25" y="159.5" width="325" height="21.5"/>
+                                                    <rect key="frame" x="25" y="175" width="325" height="29.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="mailicon" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-kn-HEd">
-                                                            <rect key="frame" x="0.0" y="4" width="21" height="14"/>
+                                                            <rect key="frame" x="0.0" y="8" width="21" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="R9C-AB-Hhb"/>
                                                                 <constraint firstAttribute="width" constant="21" id="gOw-Aj-GUG"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="tiditp@ditp.go.th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yt4-Rn-KHz">
-                                                            <rect key="frame" x="40" y="0.0" width="285" height="21.5"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-aa-bBz">
+                                                            <rect key="frame" x="40" y="0.0" width="285" height="29.5"/>
                                                             <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
-                                                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <state key="normal" title="tiditp@gmail.com">
+                                                                <color key="titleColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -482,6 +484,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="mct-T2-9uc" secondAttribute="trailing" constant="25" id="xPh-ib-jN5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contactorNameLabel" destination="OMY-M8-w64" id="5sr-Hf-U8v"/>
+                                            <outlet property="emailButton" destination="oeg-aa-bBz" id="3rK-LA-LfN"/>
+                                            <outlet property="responderDepartmentNameLabel" destination="mct-T2-9uc" id="QeC-5G-C5Y"/>
+                                            <outlet property="telButton" destination="nB6-Xt-FaH" id="jsf-Eb-Tu4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -531,9 +539,56 @@
                                     <constraint firstAttribute="height" constant="64" id="zEY-fd-pZo"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmw-is-I3g">
+                                <rect key="frame" x="0.0" y="1915" width="375" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVY-OV-lf5">
+                                        <rect key="frame" x="182" y="14" width="183" height="56"/>
+                                        <color key="backgroundColor" red="0.70196078431372544" green="0.20000000000000001" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="8zV-4t-sTm"/>
+                                            <constraint firstAttribute="width" constant="183" id="9ob-ud-W56"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="24"/>
+                                        <state key="normal" title="ลงทะเบียน">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerTapped:" destination="dFH-y2-EAZ" eventType="touchUpInside" id="M2w-0K-FuS"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ozx-tb-k8q">
+                                        <rect key="frame" x="25" y="13.5" width="132" height="58"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เริ่มต้น / คูหา" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p73-RU-Bu0">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 15,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6I-tc-HNi">
+                                                <rect key="frame" x="0.0" y="21.5" width="132" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.015686274509803921" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ozx-tb-k8q" firstAttribute="leading" secondItem="vmw-is-I3g" secondAttribute="leading" constant="25" id="Qbr-cD-J6g"/>
+                                    <constraint firstItem="Ozx-tb-k8q" firstAttribute="centerY" secondItem="vmw-is-I3g" secondAttribute="centerY" id="TNW-dy-JfH"/>
+                                    <constraint firstAttribute="trailing" secondItem="EVY-OV-lf5" secondAttribute="trailing" constant="10" id="dXT-Fw-UfA"/>
+                                    <constraint firstItem="EVY-OV-lf5" firstAttribute="centerY" secondItem="vmw-is-I3g" secondAttribute="centerY" id="dZY-am-cHG"/>
+                                    <constraint firstItem="EVY-OV-lf5" firstAttribute="leading" secondItem="Ozx-tb-k8q" secondAttribute="trailing" constant="25" id="f2r-5I-WlA"/>
+                                    <constraint firstAttribute="height" constant="85" id="qt1-XP-JNp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vmw-is-I3g" firstAttribute="leading" secondItem="s1T-1s-v5Q" secondAttribute="leading" id="3d4-tj-quo"/>
                             <constraint firstItem="cWs-95-KhV" firstAttribute="top" secondItem="s1T-1s-v5Q" secondAttribute="top" id="5bI-U2-MQ7"/>
                             <constraint firstItem="gxV-TA-sdr" firstAttribute="top" secondItem="Tp7-br-IQ5" secondAttribute="bottom" id="6LT-49-Hlc"/>
                             <constraint firstAttribute="trailing" secondItem="Tp7-br-IQ5" secondAttribute="trailing" id="6zf-nw-lxH"/>
@@ -542,17 +597,21 @@
                             <constraint firstAttribute="trailing" secondItem="jxk-Ip-iwx" secondAttribute="trailing" id="K9Z-5B-cey"/>
                             <constraint firstAttribute="trailing" secondItem="cWs-95-KhV" secondAttribute="trailing" id="Xd8-OU-eSw"/>
                             <constraint firstItem="jxk-Ip-iwx" firstAttribute="top" secondItem="s1T-1s-v5Q" secondAttribute="top" id="g3E-C1-V7f"/>
+                            <constraint firstItem="gxV-TA-sdr" firstAttribute="top" secondItem="vmw-is-I3g" secondAttribute="bottom" id="ifv-b1-xlE"/>
                             <constraint firstItem="Tp7-br-IQ5" firstAttribute="leading" secondItem="s1T-1s-v5Q" secondAttribute="leading" id="mZW-fw-zPf"/>
                             <constraint firstAttribute="trailing" secondItem="Tp7-br-IQ5" secondAttribute="trailing" id="nFs-nO-G6d"/>
                             <constraint firstItem="Tp7-br-IQ5" firstAttribute="leading" secondItem="s1T-1s-v5Q" secondAttribute="leading" id="rkC-Rj-hmp"/>
                             <constraint firstItem="jxk-Ip-iwx" firstAttribute="leading" secondItem="s1T-1s-v5Q" secondAttribute="leading" id="urY-MB-YY1"/>
                             <constraint firstItem="Tp7-br-IQ5" firstAttribute="top" secondItem="s1T-1s-v5Q" secondAttribute="top" id="vId-gf-t4m"/>
+                            <constraint firstAttribute="trailing" secondItem="vmw-is-I3g" secondAttribute="trailing" id="xDP-gb-Uch"/>
                             <constraint firstItem="gxV-TA-sdr" firstAttribute="top" secondItem="cWs-95-KhV" secondAttribute="bottom" id="z2D-LT-CB6"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
+                        <outlet property="priceLabel" destination="O6I-tc-HNi" id="1Vv-aB-sqL"/>
+                        <outlet property="registerButton" destination="EVY-OV-lf5" id="uyk-Qr-ueI"/>
                         <outlet property="tableView" destination="cWs-95-KhV" id="4EG-Fv-AeI"/>
                     </connections>
                 </viewController>
