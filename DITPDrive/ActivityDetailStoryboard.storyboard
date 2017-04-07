@@ -233,16 +233,106 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="t2p-ht-mqK">
-                                        <rect key="frame" x="0.0" y="817" width="375" height="353"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActivityBoothDetailTableViewCell" rowHeight="73" id="t2p-ht-mqK" customClass="ActivityBoothDetailTableViewCell" customModule="DITPDrive" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="817" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t2p-ht-mqK" id="D4u-BG-ha4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จำนวนคูหา:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I3-jO-cRA">
+                                                    <rect key="frame" x="25" y="25" width="71" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="71" id="Zs4-8T-cFj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
+                                                    <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ราคาเริ่มต้น:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay2-jo-i9d">
+                                                    <rect key="frame" x="25" y="51.5" width="70.5" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="71" id="Nbx-o1-suv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
+                                                    <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,000 คูหา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU3-Ap-Yg9">
+                                                    <rect key="frame" x="166" y="26" width="194" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
+                                                    <color key="textColor" red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15,000 บาท/คูหา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMp-g8-yWK">
+                                                    <rect key="frame" x="166" y="51" width="194" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
+                                                    <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5I3-jO-cRA" firstAttribute="leading" secondItem="D4u-BG-ha4" secondAttribute="leading" constant="25" id="0CC-47-D0x"/>
+                                                <constraint firstItem="vMp-g8-yWK" firstAttribute="leading" secondItem="ay2-jo-i9d" secondAttribute="trailing" constant="70" id="3L3-6E-iqX"/>
+                                                <constraint firstItem="ay2-jo-i9d" firstAttribute="leading" secondItem="D4u-BG-ha4" secondAttribute="leading" constant="25" id="3jk-ZM-eII"/>
+                                                <constraint firstAttribute="trailing" secondItem="vMp-g8-yWK" secondAttribute="trailing" constant="15" id="C88-Ai-Z5d"/>
+                                                <constraint firstItem="PU3-Ap-Yg9" firstAttribute="centerY" secondItem="5I3-jO-cRA" secondAttribute="centerY" id="Eln-3a-Ogp"/>
+                                                <constraint firstAttribute="trailing" secondItem="PU3-Ap-Yg9" secondAttribute="trailing" constant="15" id="G8Q-oM-aHY"/>
+                                                <constraint firstItem="PU3-Ap-Yg9" firstAttribute="leading" secondItem="5I3-jO-cRA" secondAttribute="trailing" constant="70" id="JpR-tt-Syy"/>
+                                                <constraint firstItem="5I3-jO-cRA" firstAttribute="top" secondItem="D4u-BG-ha4" secondAttribute="top" constant="25" id="Ske-LI-DUw"/>
+                                                <constraint firstItem="ay2-jo-i9d" firstAttribute="top" secondItem="5I3-jO-cRA" secondAttribute="bottom" constant="5" id="XqI-NO-sdA"/>
+                                                <constraint firstAttribute="bottom" secondItem="ay2-jo-i9d" secondAttribute="bottom" id="jWA-Is-Udc"/>
+                                                <constraint firstItem="vMp-g8-yWK" firstAttribute="centerY" secondItem="ay2-jo-i9d" secondAttribute="centerY" id="ka2-8g-d0b"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="boothCapacityLabel" destination="PU3-Ap-Yg9" id="fsA-8h-LHV"/>
+                                            <outlet property="boothPriceLabel" destination="vMp-g8-yWK" id="4zm-Yf-hZj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActivityDocumentTableViewCell" id="KsJ-I1-BJ6" customClass="ActivityDocumentTableViewCell" customModule="DITPDrive" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="890" width="375" height="353"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KsJ-I1-BJ6" id="xVI-CA-Cl1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เอกสารประกอบกิจกรรม:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egU-Jz-XUh">
+                                                    <rect key="frame" x="25" y="7" width="145.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
+                                                    <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-VA-3Rv">
+                                                    <rect key="frame" x="25" y="352" width="325" height="1"/>
+                                                    <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="NWZ-lT-8qZ"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efl-uq-LPz">
+                                                    <rect key="frame" x="25" y="43.5" width="325" height="283.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="efl-uq-LPz" firstAttribute="leading" secondItem="xVI-CA-Cl1" secondAttribute="leading" constant="25" id="6LI-cv-HXY"/>
+                                                <constraint firstAttribute="trailing" secondItem="efl-uq-LPz" secondAttribute="trailing" constant="25" id="9yD-hg-eYF"/>
+                                                <constraint firstItem="egU-Jz-XUh" firstAttribute="top" secondItem="xVI-CA-Cl1" secondAttribute="top" constant="7" id="AIZ-KV-hBP"/>
+                                                <constraint firstAttribute="trailing" secondItem="O0f-VA-3Rv" secondAttribute="trailing" constant="25" id="KYT-an-vIx"/>
+                                                <constraint firstAttribute="bottom" secondItem="O0f-VA-3Rv" secondAttribute="bottom" id="aye-2Z-wSE"/>
+                                                <constraint firstItem="O0f-VA-3Rv" firstAttribute="leading" secondItem="xVI-CA-Cl1" secondAttribute="leading" constant="25" id="bK7-N8-2n7"/>
+                                                <constraint firstItem="efl-uq-LPz" firstAttribute="top" secondItem="egU-Jz-XUh" secondAttribute="bottom" constant="15" id="iWk-Lh-VfM"/>
+                                                <constraint firstItem="egU-Jz-XUh" firstAttribute="leading" secondItem="xVI-CA-Cl1" secondAttribute="leading" constant="25" id="sWE-pf-jsP"/>
+                                                <constraint firstItem="O0f-VA-3Rv" firstAttribute="top" secondItem="efl-uq-LPz" secondAttribute="bottom" constant="25" id="snh-HV-ghV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="documentContainerView" destination="efl-uq-LPz" id="wYp-24-5Ub"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActivityDescriptionTableViewCell" rowHeight="423" id="kjj-vH-gup" customClass="ActivityDescriptionTableViewCell" customModule="DITPDrive" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1170" width="375" height="423"/>
+                                        <rect key="frame" x="0.0" y="1243" width="375" height="423"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjj-vH-gup" id="3wH-gG-vT3">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="423"/>
@@ -259,7 +349,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WID-rK-xso">
                                                     <rect key="frame" x="25" y="71" width="325" height="326"/>
-                                                    <mutableString key="text">1. เป็นงานแสดงสินค้าเกี่ยวกับวัตถุดิบ หนังผืน หนังฟอก และผลิตภัณฑ์ทางเคมีที่ใช้ในอุตสาหกรรมเครื่องหนัง จัดขึ้นเพื่อเจรจาการค้าเท่านั้น
+                                                    <string key="text">1. เป็นงานแสดงสินค้าเกี่ยวกับวัตถุดิบ หนังผืน หนังฟอก และผลิตภัณฑ์ทางเคมีที่ใช้ในอุตสาหกรรมเครื่องหนัง จัดขึ้นเพื่อเจรจาการค้าเท่านั้น
 2. ผลการเข้าร่วมงานปี 2559 
 -คาดว่ามูลค่าสั่งซื้อภายใน 1 ปีประมาณ 8,334,000 เหรียญสหรัฐฯ 
 (หรือ 300 ล้านบาท) 
@@ -270,7 +360,7 @@
 สำหรับผู้ประกอบการขนาดกลางและขนาดย่อมฯ ต้องแนบสำเนาการเงิน (เฉพาะ
 งบกำไรขาดทุน) ที่มีการแยกรายได้จากการส่งออกย้อนหลัง 1 ปี 
 -อัตราสมทบของผู้เข้าร่วมงาน : กรมฯ จะดำเนินการในขั้นตอนต่างๆ เพื่อสมัคร
-เข้าร่วมงานกับผู้จัดงานโดยตรง และจะให้การสนับสนุนค่าใช้จ่ายบางส่วนแก่</mutableString>
+เข้าร่วมงานกับผู้จัดงานโดยตรง และจะให้การสนับสนุนค่าใช้จ่ายบางส่วนแก่</string>
                                                     <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="14"/>
                                                     <color key="textColor" red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>

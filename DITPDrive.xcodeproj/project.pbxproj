@@ -69,6 +69,8 @@
 		81FD34A91E77E35C005D1404 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136565A1E6D724C00C478CD /* OHHTTPStubs.framework */; };
 		81FD34AB1E77E35E005D1404 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FD34AA1E77E35E005D1404 /* SDWebImage.framework */; };
 		81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */; };
+		E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */; };
+		E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +160,8 @@
 		81FD34A71E77D20A005D1404 /* ApplicationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationPageViewController.swift; sourceTree = "<group>"; };
 		81FD34AA1E77E35E005D1404 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightActivityViewController.swift; sourceTree = "<group>"; };
+		E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBoothDetailTableViewCell.swift; sourceTree = "<group>"; };
+		E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDocumentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 				816C0BEE1E9383C200D916B6 /* ActivityDetailTableViewCell.swift */,
 				816C0BF11E93915B00D916B6 /* ActivityMapTableViewCell.swift */,
 				816C0BF31E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift */,
+				E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */,
+				E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -585,6 +591,8 @@
 				8182A3091E92560A00CD8DBE /* GradientView.swift in Sources */,
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
 				81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */,
+				E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */,
+				E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */,
 				81A853D51E63D86E00162642 /* ViewController.swift in Sources */,
 				813656561E6D4A8300C478CD /* DITPDriveAPI.swift in Sources */,
 				8118021F1E71071E0092EC31 /* HomeViewController.swift in Sources */,
