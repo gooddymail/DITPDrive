@@ -233,8 +233,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="t2p-ht-mqK">
+                                        <rect key="frame" x="0.0" y="817" width="375" height="353"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t2p-ht-mqK" id="D4u-BG-ha4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActivityDescriptionTableViewCell" rowHeight="423" id="kjj-vH-gup" customClass="ActivityDescriptionTableViewCell" customModule="DITPDrive" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="817" width="375" height="423"/>
+                                        <rect key="frame" x="0.0" y="1170" width="375" height="423"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjj-vH-gup" id="3wH-gG-vT3">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="423"/>
