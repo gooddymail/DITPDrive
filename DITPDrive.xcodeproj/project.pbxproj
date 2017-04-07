@@ -71,6 +71,7 @@
 		81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */; };
 		E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */; };
 		E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */; };
+		E18BB4801E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47F1E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 		81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightActivityViewController.swift; sourceTree = "<group>"; };
 		E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBoothDetailTableViewCell.swift; sourceTree = "<group>"; };
 		E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDocumentTableViewCell.swift; sourceTree = "<group>"; };
+		E18BB47F1E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityContactInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 				816C0BF31E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift */,
 				E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */,
 				E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */,
+				E18BB47F1E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */,
 				8182A3091E92560A00CD8DBE /* GradientView.swift in Sources */,
 				81788C551E6407FB00120471 /* Activity.swift in Sources */,
+				E18BB4801E9768A3000CC807 /* ActivityContactInfoTableViewCell.swift in Sources */,
 				81FD34A81E77D20A005D1404 /* ApplicationPageViewController.swift in Sources */,
 				E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */,
 				E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */,

@@ -72,16 +72,18 @@ extension ActivityDetailViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    return 6
   }
   
   func cellIdentifier(at indexPath: IndexPath) -> String {
     switch indexPath.row {
-    case 0: return ActivityDetailTableViewCell.identifier()
-    case 1: return ActivityMapTableViewCell.identifier()
-    case 2: return ActivityDescriptionTableViewCell.identifier()
-    default:
-      return ""
+      case 0: return ActivityDetailTableViewCell.identifier()
+      case 1: return ActivityMapTableViewCell.identifier()
+      case 2: return ActivityBoothDetailTableViewCell.identifier()
+      case 3: return ActivityDocumentTableViewCell.identifier()
+      case 4: return ActivityDescriptionTableViewCell.identifier()
+      case 5: return ActivityContactInfoTableViewCell.identifier()
+      default: return ""
     }
   }
   
