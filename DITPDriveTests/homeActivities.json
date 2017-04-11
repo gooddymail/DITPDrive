@@ -37,7 +37,7 @@
                      "id": 1,
                      "thumbnail_image": "www.image.com",
                      "banner_image": "www.image.com",
-                     "event_location": "ไบเทค บางนา",
+                     "fair_location": "ไบเทค บางนา",
                      "register_start_date": "14/11/2017",
                      "register_end_date": "10/12/2017",
                      "favorite": true
@@ -78,7 +78,7 @@
                     "id": 2,
                     "thumbnail_image": "www.image.com",
                     "banner_image": "www.image.com",
-                    "event_location": "ไบเทค บางนา",
+                    "fair_location": "ไบเทค บางนา",
                     "register_start_date": "14/11/2017",
                     "register_end_date": "10/12/2017",
                     "favorite": true
@@ -99,7 +99,7 @@
               "id": 1,
               "thumbnail_image": "www.image.com",
               "banner_image": "www.image.com",
-              "event_location": "ไบเทค บางนา",
+              "fair_location": "ไบเทค บางนา",
               "register_start_date": "14/11/2017",
               "register_end_date": "10/12/2017",
               "favorite": true

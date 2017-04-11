@@ -12,15 +12,31 @@ import OHHTTPStubs
 @testable import DITPDrive
 
 class ActivityModelTests: XCTestCase {
+  
+  override func setUp() {
+    super.setUp()
     
-    override func setUp() {
-        super.setUp()
+    setupStubData()
+  }
+  
+  func setupStubData() {
+    stub(condition: isHost("ditpdrive.com") && isPath("/activities")) { request in
+      return OHHTTPStubsResponse(fileAtPath: OHPathForFile("activities.json", type(of: self))!,
+                                 statusCode: 200,
+                                 headers: nil)
     }
     
-    override func tearDown() {
-        OHHTTPStubs.removeAllStubs()
-        super.tearDown()
+    stub(condition: isHost("ditpdrive.com") && isPath("/activities/home")) { request in
+      return OHHTTPStubsResponse(fileAtPath: OHPathForFile("homeActivities.json", type(of: self))!,
+                                 statusCode: 200,
+                                 headers: nil)
     }
+  }
+  
+  override func tearDown() {
+    OHHTTPStubs.removeAllStubs()
+    super.tearDown()
+  }
   
   func testInitailizeActivityWithJSON() {
     let bundle = Bundle(for: type(of: self))
@@ -45,24 +61,23 @@ class ActivityModelTests: XCTestCase {
   }
   
   func testGetActivitiesFromServer() {
-    stub(condition: isHost("ditpdrive.com") && isPath("activities")) { request in
-      return OHHTTPStubsResponse(fileAtPath: OHPathForFile("activities.json", type(of: self))!,
-                                 statusCode: 200,
-                                 headers: nil)
-    }
+    let urlExpectation = expectation(description: "Get Activity")
     var activitiesWrapper: ActivitiesWrapper?
     DITPDriveAPI.instance.getActivities(nil) { result in
       activitiesWrapper = result.value
       XCTAssertEqual(activitiesWrapper?.count, 3)
+      urlExpectation.fulfill()
+    }
+    
+    waitForExpectations(timeout: 10) { error in
+      if let error = error {
+        print("Error: \(error.localizedDescription)")
+      }
     }
   }
   
   func testGetHomeActivitiesFromServer() {
-    stub(condition: isHost("ditpdrive.com") && isPath("activities/home")) { request in
-      return OHHTTPStubsResponse(fileAtPath: OHPathForFile("homeActivities.json", type(of: self))!,
-                                 statusCode: 200,
-                                 headers: nil)
-    }
+    let urlExpectation = expectation(description: "Get Home Activity")
     DITPDriveAPI.instance.getHomeActivities() { result in
       guard let homeActivityWrapper = result.value else { return XCTFail() }
       XCTAssertNotNil(homeActivityWrapper.highlightActivities)
@@ -76,7 +91,13 @@ class ActivityModelTests: XCTestCase {
       
       XCTAssertNotNil(homeActivityWrapper.seminar)
       XCTAssertEqual(homeActivityWrapper.seminar.count, 3, "Home api should return 3 seminar activity")
+      
+      urlExpectation.fulfill()
+    }
+    waitForExpectations(timeout: 10) { error in
+      if let error = error {
+        print("Error: \(error.localizedDescription)")
+      }
     }
   }
-  
 }
