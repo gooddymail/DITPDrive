@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MY PROFILE-->
+        <scene sceneID="n3d-Kd-J1B">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileViewController" id="vFg-f4-7QM" customClass="MyProfileViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ojs-Gx-vyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="gZv-Tx-h5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oXe-Z0-990">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-PG-bSk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Dp9-PG-bSk" secondAttribute="bottom" id="3g7-Ab-8bI"/>
+                            <constraint firstAttribute="trailing" secondItem="Dp9-PG-bSk" secondAttribute="trailing" id="MDP-es-1V7"/>
+                            <constraint firstItem="Dp9-PG-bSk" firstAttribute="leading" secondItem="oXe-Z0-990" secondAttribute="leading" id="hQm-86-ZO7"/>
+                            <constraint firstItem="Dp9-PG-bSk" firstAttribute="top" secondItem="oXe-Z0-990" secondAttribute="top" id="seX-vm-HtH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MY PROFILE" image="icon-profile" selectedImage="icon-profile-active" id="Rxv-hU-acI">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yj1-n4-iTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="-197.45127436281859"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="icon-profile" width="22" height="23"/>
+        <image name="icon-profile-active" width="22" height="23"/>
+    </resources>
+</document>

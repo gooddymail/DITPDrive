@@ -50,10 +50,15 @@ class IntroContainerViewController: ApplicationBaseViewController {
       let tabbarController = UITabBarController()
       tabbarController.tabBar.tintColor = UIColor(red:0.98, green:0.69, blue:0.25, alpha:1.0)
       tabbarController.tabBar.barTintColor = UIColor(applicationColor: .purple)
+      tabbarController.tabBar.unselectedItemTintColor = UIColor.white
       tabbarController.tabBar.isTranslucent = false
       let homeNavigationController = UINavigationController(rootViewController: HomeViewController.controller())
+      let categoryViewController = CategoryViewController.controller()
+      let myApplicationViewController = MyApplicationViewController.controller()
+      let myProfileViewController = MyProfileViewController.controller()
+      
       homeNavigationController.isNavigationBarHidden = true
-      tabbarController.viewControllers = [homeNavigationController]
+      tabbarController.viewControllers = [homeNavigationController, categoryViewController, myApplicationViewController, myProfileViewController]
       window!.rootViewController = tabbarController
     }, completion: nil)
   }

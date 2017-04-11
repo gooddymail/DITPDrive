@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MY APPLICATION-->
+        <scene sceneID="klL-xk-F4o">
+            <objects>
+                <viewController storyboardIdentifier="MyApplicationViewController" id="JjO-Gl-go4" customClass="MyApplicationViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yFL-jM-p9w"/>
+                        <viewControllerLayoutGuide type="bottom" id="aQ8-ze-ryO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CrN-B4-dc4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZsO-Rj-ew3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZsO-Rj-ew3" firstAttribute="top" secondItem="CrN-B4-dc4" secondAttribute="top" id="Qx8-QF-u4X"/>
+                            <constraint firstAttribute="bottom" secondItem="ZsO-Rj-ew3" secondAttribute="bottom" id="bCu-cf-OOa"/>
+                            <constraint firstItem="ZsO-Rj-ew3" firstAttribute="leading" secondItem="CrN-B4-dc4" secondAttribute="leading" id="plD-KD-RDV"/>
+                            <constraint firstAttribute="trailing" secondItem="ZsO-Rj-ew3" secondAttribute="trailing" id="th2-nf-3Gf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MY APPLICATION" image="icon-application" selectedImage="icon-application-active" id="gFr-8Q-a6K">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xh-0l-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="-170.46476761619192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="icon-application" width="19" height="23"/>
+        <image name="icon-application-active" width="19" height="23"/>
+    </resources>
+</document>
