@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroContainerViewController: UIViewController {
+class IntroContainerViewController: ApplicationBaseViewController {
   
   @IBOutlet weak var introStepContainerView: UIView!
   
@@ -23,7 +23,6 @@ class IntroContainerViewController: UIViewController {
   }
   
   fileprivate func setupIntroPageView() {
-    
     let introStepPageViewController = ApplicationPageViewController(contentViewControllersInPageView: [self.introStepViewController(withIdentifier: "step1"),
                                                                                                        self.introStepViewController(withIdentifier: "step2"),
                                                                                                        self.introStepViewController(withIdentifier: "step3")])
@@ -52,7 +51,9 @@ class IntroContainerViewController: UIViewController {
       tabbarController.tabBar.tintColor = UIColor(red:0.98, green:0.69, blue:0.25, alpha:1.0)
       tabbarController.tabBar.barTintColor = UIColor(applicationColor: .purple)
       tabbarController.tabBar.isTranslucent = false
-      tabbarController.viewControllers = [UIStoryboard.homeStoryboard().instantiateViewController(withIdentifier: "home")]
+      let homeNavigationController = UINavigationController(rootViewController: HomeViewController.controller())
+      homeNavigationController.isNavigationBarHidden = true
+      tabbarController.viewControllers = [homeNavigationController]
       window!.rootViewController = tabbarController
     }, completion: nil)
   }
