@@ -18,4 +18,8 @@ extension UIStoryboard {
   class func homeStoryboard() -> UIStoryboard {
     return UIStoryboard(name: "Home", bundle: nil)
   }
+  
+  class func activityDetailStoryboard() -> UIStoryboard {
+    return UIStoryboard(name: "ActivityDetailStoryboard", bundle: nil)
+  }
 }
