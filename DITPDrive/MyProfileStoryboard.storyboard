@@ -9,29 +9,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MY APPLICATION-->
-        <scene sceneID="klL-xk-F4o">
+        <!--MY PROFILE-->
+        <scene sceneID="n3d-Kd-J1B">
             <objects>
-                <viewController id="JjO-Gl-go4" sceneMemberID="viewController">
+                <viewController id="vFg-f4-7QM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yFL-jM-p9w"/>
-                        <viewControllerLayoutGuide type="bottom" id="aQ8-ze-ryO"/>
+                        <viewControllerLayoutGuide type="top" id="ojs-Gx-vyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="gZv-Tx-h5o"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CrN-B4-dc4">
+                    <view key="view" contentMode="scaleToFill" id="oXe-Z0-990">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MY APPLICATION" image="icon-application" selectedImage="icon-application-active" id="gFr-8Q-a6K"/>
+                    <tabBarItem key="tabBarItem" title="MY PROFILE" image="icon-profile" selectedImage="icon-profile-active" id="Rxv-hU-acI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xh-0l-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yj1-n4-iTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="-170"/>
+            <point key="canvasLocation" x="721" y="-197"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon-application" width="19" height="23"/>
-        <image name="icon-application-active" width="19" height="23"/>
+        <image name="icon-profile" width="22" height="23"/>
+        <image name="icon-profile-active" width="22" height="23"/>
     </resources>
 </document>

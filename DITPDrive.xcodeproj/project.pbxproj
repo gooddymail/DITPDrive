@@ -71,6 +71,7 @@
 		81FD34AD1E77E5D8005D1404 /* HighlightActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */; };
 		894615931E9C8F2A005F60D9 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894615921E9C8F2A005F60D9 /* CategoryStoryboard.storyboard */; };
 		898D753C1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898D753B1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard */; };
+		898D753F1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898D753E1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard */; };
 		E11108D41E9779E2004D0584 /* AttachmentDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */; };
 		E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */; };
 		E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */; };
@@ -166,6 +167,7 @@
 		81FD34AC1E77E5D8005D1404 /* HighlightActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightActivityViewController.swift; sourceTree = "<group>"; };
 		894615921E9C8F2A005F60D9 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
 		898D753B1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyApplicationStoryboard.storyboard; sourceTree = "<group>"; };
+		898D753E1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentDocumentView.swift; sourceTree = "<group>"; };
 		E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBoothDetailTableViewCell.swift; sourceTree = "<group>"; };
 		E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDocumentTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		8118021A1E7106870092EC31 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				898D753D1E9CAA5B00C555F1 /* MyProfile */,
 				898D753A1E9CA9D300C555F1 /* MyApplication */,
 				894615911E9C8EBE005F60D9 /* Category */,
 				8182A3031E92432600CD8DBE /* ActivityDetail */,
@@ -462,6 +465,14 @@
 			name = MyApplication;
 			sourceTree = "<group>";
 		};
+		898D753D1E9CAA5B00C555F1 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				898D753E1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard */,
+			);
+			name = MyProfile;
+			sourceTree = "<group>";
+		};
 		E11108D21E9779B6004D0584 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +586,7 @@
 				81AE81CB1E83D38700B491A6 /* Prompt-Italic.ttf in Resources */,
 				8118021D1E7107060092EC31 /* Home.storyboard in Resources */,
 				81AE81CF1E83D38700B491A6 /* Prompt-MediumItalic.ttf in Resources */,
+				898D753F1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard in Resources */,
 				8182A3051E92435000CD8DBE /* ActivityDetailStoryboard.storyboard in Resources */,
 				898D753C1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard in Resources */,
 				81AE81C91E83D38700B491A6 /* Prompt-ExtraLight.ttf in Resources */,

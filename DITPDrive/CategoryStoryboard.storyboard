@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--CATEGORY-->
         <scene sceneID="auV-Hm-aPo">
             <objects>
                 <viewController id="KGw-ut-CqP" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="icon-calendar" selectedImage="icon-calendar-active" id="iGJ-Vd-Yzh"/>
+                    <tabBarItem key="tabBarItem" title="CATEGORY" image="icon-calendar" selectedImage="icon-calendar-active" id="iGJ-Vd-Yzh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIE-el-jEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
