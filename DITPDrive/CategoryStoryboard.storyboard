@@ -12,7 +12,7 @@
         <!--CATEGORY-->
         <scene sceneID="auV-Hm-aPo">
             <objects>
-                <viewController id="KGw-ut-CqP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryViewController" id="KGw-ut-CqP" customClass="CategoryViewController" customModule="DITPDrive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="anC-Y5-YhW"/>
                         <viewControllerLayoutGuide type="bottom" id="vBy-8F-Dzz"/>
@@ -20,17 +20,31 @@
                     <view key="view" contentMode="scaleToFill" id="oUn-34-MA1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="T7Y-1A-y3g">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T7Y-1A-y3g" secondAttribute="bottom" id="92a-yt-gG0"/>
+                            <constraint firstAttribute="trailing" secondItem="T7Y-1A-y3g" secondAttribute="trailing" id="Oc6-nv-4i6"/>
+                            <constraint firstItem="T7Y-1A-y3g" firstAttribute="top" secondItem="oUn-34-MA1" secondAttribute="top" id="hR3-hZ-bpI"/>
+                            <constraint firstItem="T7Y-1A-y3g" firstAttribute="leading" secondItem="oUn-34-MA1" secondAttribute="leading" id="qxl-Lw-pR5"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="CATEGORY" image="icon-calendar" selectedImage="icon-calendar-active" id="iGJ-Vd-Yzh"/>
+                    <tabBarItem key="tabBarItem" title="CATEGORY" image="icon-calendar" selectedImage="icon-calendar-active" id="iGJ-Vd-Yzh">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-5" vertical="-2"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIE-el-jEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-199"/>
+            <point key="canvasLocation" x="308" y="-199.25037481259372"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="375" height="667"/>
         <image name="icon-calendar" width="22" height="20"/>
         <image name="icon-calendar-active" width="22" height="20"/>
     </resources>

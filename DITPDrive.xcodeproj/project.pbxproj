@@ -72,6 +72,9 @@
 		894615931E9C8F2A005F60D9 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894615921E9C8F2A005F60D9 /* CategoryStoryboard.storyboard */; };
 		898D753C1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898D753B1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard */; };
 		898D753F1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898D753E1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard */; };
+		898D75411E9CAC0A00C555F1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D75401E9CAC0A00C555F1 /* CategoryViewController.swift */; };
+		898D75431E9CAC1400C555F1 /* MyApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D75421E9CAC1400C555F1 /* MyApplicationViewController.swift */; };
+		898D75451E9CAC2100C555F1 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898D75441E9CAC2100C555F1 /* MyProfileViewController.swift */; };
 		E11108D41E9779E2004D0584 /* AttachmentDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */; };
 		E18BB47C1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */; };
 		E18BB47E1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */; };
@@ -168,6 +171,9 @@
 		894615921E9C8F2A005F60D9 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
 		898D753B1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyApplicationStoryboard.storyboard; sourceTree = "<group>"; };
 		898D753E1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		898D75401E9CAC0A00C555F1 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		898D75421E9CAC1400C555F1 /* MyApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApplicationViewController.swift; sourceTree = "<group>"; };
+		898D75441E9CAC2100C555F1 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		E11108D31E9779E2004D0584 /* AttachmentDocumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentDocumentView.swift; sourceTree = "<group>"; };
 		E18BB47B1E975420000CC807 /* ActivityBoothDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBoothDetailTableViewCell.swift; sourceTree = "<group>"; };
 		E18BB47D1E9755CE000CC807 /* ActivityDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDocumentTableViewCell.swift; sourceTree = "<group>"; };
@@ -453,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				894615921E9C8F2A005F60D9 /* CategoryStoryboard.storyboard */,
+				898D75401E9CAC0A00C555F1 /* CategoryViewController.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -461,6 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				898D753B1E9CA9E900C555F1 /* MyApplicationStoryboard.storyboard */,
+				898D75421E9CAC1400C555F1 /* MyApplicationViewController.swift */,
 			);
 			name = MyApplication;
 			sourceTree = "<group>";
@@ -469,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				898D753E1E9CAA8B00C555F1 /* MyProfileStoryboard.storyboard */,
+				898D75441E9CAC2100C555F1 /* MyProfileViewController.swift */,
 			);
 			name = MyProfile;
 			sourceTree = "<group>";
@@ -651,6 +660,7 @@
 				81430B661E8CEFDA0071B72D /* iCarousel.m in Sources */,
 				81430B7C1E8D036D0071B72D /* CategoryView.swift in Sources */,
 				8182A3071E92436900CD8DBE /* ActivityDetailViewController.swift in Sources */,
+				898D75451E9CAC2100C555F1 /* MyProfileViewController.swift in Sources */,
 				81F223431E76878F008D4F41 /* ApplicationStoryboard.swift in Sources */,
 				813656541E6D3A6600C478CD /* Router.swift in Sources */,
 				81A853D31E63D86E00162642 /* AppDelegate.swift in Sources */,
@@ -658,6 +668,7 @@
 				816C0BF21E93915B00D916B6 /* ActivityMapTableViewCell.swift in Sources */,
 				81430B7E1E8D098A0071B72D /* UIViewExtension.swift in Sources */,
 				816C0BF41E9399E500D916B6 /* ActivityDescriptionTableViewCell.swift in Sources */,
+				898D75411E9CAC0A00C555F1 /* CategoryViewController.swift in Sources */,
 				814663D51E8B891F00A42E01 /* HighlightAndCategoryViewController.swift in Sources */,
 				81FD34A41E77B029005D1404 /* Theme.swift in Sources */,
 				811D37771E652ED3006195BB /* SerializationError.swift in Sources */,
@@ -666,6 +677,7 @@
 				816C0BEF1E9383C200D916B6 /* ActivityDetailTableViewCell.swift in Sources */,
 				813656591E6D4F9500C478CD /* ActivitiesWrapper.swift in Sources */,
 				816C0BC91E9355B800D916B6 /* ApplicationBaseViewController.swift in Sources */,
+				898D75431E9CAC1400C555F1 /* MyApplicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

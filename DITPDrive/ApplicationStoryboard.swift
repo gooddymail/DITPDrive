@@ -22,4 +22,16 @@ extension UIStoryboard {
   class func activityDetailStoryboard() -> UIStoryboard {
     return UIStoryboard(name: "ActivityDetailStoryboard", bundle: nil)
   }
+  
+  class func myProfileStoryboard() -> UIStoryboard {
+    return UIStoryboard(name: "MyProfileStoryboard", bundle: nil)
+  }
+  
+  class func myApplicationStoryboard() -> UIStoryboard {
+    return UIStoryboard(name: "MyApplicationStoryboard", bundle: nil)
+  }
+  
+  class func categoryStoryboard() -> UIStoryboard {
+    return UIStoryboard(name: "CategoryStoryboard", bundle: nil)
+  }
 }
